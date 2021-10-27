@@ -1,5 +1,5 @@
-# istio-events
+# Clowder
 
-Repo for https://events.istio.io 
+Repo for http://clowder.dev/
 
-The first website will be for IstioCon 2021 and will be under istiocon-2021.
+The first website will be for Clowder.
