@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frequently Asked Questions on Clowder</title>
+    <link>http://clowder.dev/faq/</link>
+    <description>Recent content in Frequently Asked Questions on Clowder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Jan 2021 11:35:48 -0600</lastBuildDate><atom:link href="http://clowder.dev/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faq</title>
+      <link>http://clowder.dev/faq/1/</link>
+      <pubDate>Fri, 08 Jan 2021 12:40:42 -0600</pubDate>
+      
+      <guid>http://clowder.dev/faq/1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event list on Clowder</title>
+    <link>http://clowder.dev/event-list/</link>
+    <description>Recent content in Event list on Clowder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 06 Jan 2021 18:26:06 -0600</lastBuildDate><atom:link href="http://clowder.dev/event-list/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
     <meta charset="utf-8">
-    <title>404 Page not found | Clowder</title>
+    <title>Schedule (English) | Clowder</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="description" content="Coming soon.">
     
   
-    <meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Coming soon." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://clowder.dev/404.html" /><meta property="og:image" content="http://clowder.dev/images/Clowder_home.jpg"/>
+    <meta property="og:title" content="Schedule (English)" />
+<meta property="og:description" content="This schedule only shows sessions in English. See the full schedule here." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://clowder.dev/schedule/english/" /><meta property="og:image" content="http://clowder.dev/images/Clowder_home.jpg"/><meta property="article:section" content="schedule" />
+
+
 
 
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://clowder.dev/images/Clowder_home.jpg"/>
 
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Coming soon."/>
+<meta name="twitter:title" content="Schedule (English)"/>
+<meta name="twitter:description" content="This schedule only shows sessions in English. See the full schedule here."/>
 
 
     
@@ -142,23 +144,154 @@
 
 
 
+<section class="page-header" style="padding-top: 80px;background-color:rgba(38, 84, 122, 0.212); background-image: url('/'), url('/images/title-back.png');">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mb-3">
+          <div class="content text-center mb-3">            
+            <h1 class="mb-3" style="color: black; background-color:rgba(255, 255, 255, 0.794);" >Schedule (English)</h1>
+            <div class="divider mx-auto mb-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="error section">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6">
-				<img src="http://clowder.dev/images/about/404-Error-Concept.png" alt="" class="img-fluid">
-			</div>
-			<div class="col-lg-6">
-				<div class="error-content mt-5 mt-lg-0">
-					<h3>Nothing Found!</h3>
-					<p class="mt-3">Sorry, but nothing matched your search terms. Please try again with some different keywords.Lets search again .</p>
-					<a href="http://clowder.dev/" class="btn btn-hero btn-rounded mt-3">Go to home</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
+
+<div class="container mt-4">
+  <div class="row">
+    <p>This schedule only shows sessions in English. See the <a href="/istiocon-2021/schedule">full schedule here</a>.</p>
+
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <nav class="nav nav-pills nav-fill" role="tablist">
+
+        
+        <a class="nav-item nav-link  active " data-toggle="tab"
+          href="#scheduleTaba" role="tab">
+          <div id="tab-title-a">
+            <h2>a</h2>
+          </div>
+        </a>
+        
+        <a class="nav-item nav-link " data-toggle="tab"
+          href="#scheduleTabc" role="tab">
+          <div id="tab-title-c">
+            <h2>c</h2>
+          </div>
+        </a>
+        
+        <a class="nav-item nav-link " data-toggle="tab"
+          href="#scheduleTabd" role="tab">
+          <div id="tab-title-d">
+            <h2>d</h2>
+          </div>
+        </a>
+        
+        <a class="nav-item nav-link " data-toggle="tab"
+          href="#scheduleTabf" role="tab">
+          <div id="tab-title-f">
+            <h2>f</h2>
+          </div>
+        </a>
+        
+        <a class="nav-item nav-link " data-toggle="tab"
+          href="#scheduleTabg" role="tab">
+          <div id="tab-title-g">
+            <h2>g</h2>
+          </div>
+        </a>
+        
+      </nav>
+
+      <div class="tab-content">
+        
+        <div class="tab-pane fade  show active  " id="scheduleTaba"
+          role="tabpanel">
+          <ul class="mt-4 time-table pl-0 list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="tab-pane fade  " id="scheduleTabc"
+          role="tabpanel">
+          <ul class="mt-4 time-table pl-0 list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="tab-pane fade  " id="scheduleTabd"
+          role="tabpanel">
+          <ul class="mt-4 time-table pl-0 list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="tab-pane fade  " id="scheduleTabf"
+          role="tabpanel">
+          <ul class="mt-4 time-table pl-0 list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="tab-pane fade  " id="scheduleTabg"
+          role="tabpanel">
+          <ul class="mt-4 time-table pl-0 list-unstyled">
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function adjBlock(elemId, date1) {
+    let parseDate1 = Date.parse(date1);
+    let jsDate1 = new Date(parseDate1);
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let adjString = "<h2>" + days[jsDate1.getDay()] + "</h2><p>Feb-" + jsDate1.getDate()+"</p>";
+    document.getElementById(elemId).innerHTML = adjString;
+  } 
+
+  function adjTime(elemId, timeStart, timeEnd, timeBlock) {
+      let dateStart = new Date(Date.parse(timeStart));
+      let dateEnd = new Date(Date.parse(timeEnd));
+      let dateBlock = new Date(Date.parse(timeBlock));
+      let adjString = dateStart.getHours()+":"+(('0'+dateStart.getMinutes()).slice(-2))+"-"+dateEnd.getHours()+":"+(('0'+dateEnd.getMinutes()).slice(-2));
+      if (dateStart.getDay() > dateBlock.getDay()) {
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        adjString += " ("+days[dateStart.getDay()]+")";
+      }  
+      document.getElementById(elemId).innerHTML=adjString;
+  }
+
+  
+      
+      adjBlock("tab-title-a", "22 Feb 2021 16:00:00 UTC ");
+      
+  
+      
+      adjBlock("tab-title-c", "23 Feb 2021 16:00:00 UTC ");
+      
+  
+      
+      adjBlock("tab-title-d", "24 Feb 2021 16:00:00 UTC ");
+      
+  
+      
+      adjBlock("tab-title-f", "25 Feb 2021 16:00:00 UTC ");
+      
+  
+      
+      adjBlock("tab-title-g", "26 Feb 2021 16:00:00 UTC ");
+      
+      
+
+</script>
 
 <footer class="section footer">
 	<div class="container">

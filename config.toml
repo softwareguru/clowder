@@ -115,9 +115,9 @@ home = "Home"
 description = "Coming soon."
 image = "/images/Clowder_home.jpg"
 images = ["/images/Clowder_home.jpg"]
-twitter_user = "@istiocon"
-email = "istiocon@googlegroups.com"
-author = "Software Guru"
+twitter_user = ""
+email = ""
+author = ""
 
 # search for blog page
 search = true
@@ -170,11 +170,11 @@ link = "#"
 
 #[[params.footer_resources]]
 #name = "Call for papers"
-#link = "https://sessionize.com/istiocon-2021/"
+#link = ""
 
 #[[params.footer_resources]]
 #name = "Partnership opportunities"
-#link = "/istiocon-2021/partner/IstioCon2021_Partner_Packages_v2.pdf"
+#link = ""
 
 
 

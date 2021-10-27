@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talk name on Clowder</title>
+    <link>http://clowder.dev/talks/</link>
+    <description>Recent content in Talk name on Clowder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Jan 2021 10:26:17 -0600</lastBuildDate><atom:link href="http://clowder.dev/talks/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
