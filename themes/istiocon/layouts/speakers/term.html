@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<!-- Speaker Detail -->
+<section class="speaker-detail">
+  <div class="auto-container">
+      <div class="row">
+          <div class="image-column col-lg-4 col-md-12 col-sm-12">
+              <div class="image-box">
+                  <figure class="image"><img src="{{ .Params.Image | relURL }}" alt=""></figure>
+                  <ul class="social-icon-two social-icon-colored text-center">
+                      {{ with .Params.twitter }}
+                      {{ if ne . "" }}
+                      <li><a href="{{ . }}" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                      {{ end }}
+                      {{ end }} 
+
+                      {{ with .Params.linkedin }}
+                      {{ if ne . "" }}
+                      <li><a href="{{ . }}" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+                      {{ end }}
+                      {{ end }} 
+
+                      {{ with .Params.github }}
+                      {{ if ne . "" }}
+                      <li><a href="{{ . }}" target="_blank"><span class="fab fa-github"></span></a></li>
+                      {{ end }}
+                      {{ end }}
+                  </ul>
+              </div>
+          </div>
+
+          <div class="info-column col-lg-8 col-md-12 col-sm-12">
+              <div class="inner-column">
+                  <div class="text-box">
+                      <h3>{{ .Title }}</h3>
+                      {{ with .Params.designation }}<h5>{{.}}</h5>{{ end }}
+                      <p>{{ .Content }}</p>
+                      <h4>Sessions by {{ .Title }}</h4>
+
+                      <!-- Sessions speaker -->
+                      <ul>
+                      {{ range .Data.Pages.ByParam "id" }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                      {{ end }}
+                      </ul>
+                      <!-- Sessions speaker end -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--End Speker Detail -->
+
+{{ end }}

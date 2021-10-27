@@ -1,0 +1,89 @@
+{{ $data := index .Site.Data }}
+
+
+<div class="container mb-4">
+  
+
+  <div class="schedule-block" style="margin-top: 50px;">
+ 
+  <div class="row">
+
+    <div class="col-md-5">
+   
+      <h2 class="upcoming-event-title"> 
+        <img src="/images/icons/Event.png" alt="" width="90">UPCOMING EVENTS</h2>
+    </div>
+    <div class="col col-lg-7">
+      <div class="project-item" style="background-color:#7878FF;">
+        <h3><a class="session-title" data-toggle="collapse" href="#abs-1" style="color: black;"> <strong>November 04</strong></a></h3>
+        
+        <p class="speakers-list" style="color:black;"> <strong>Data Lake:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+        </p>
+        <div class="collapse card-abstract" id="abs-1" style="color: black;">
+            <div><a href="/events" style="color: black;">See more...</a></div>
+    </div>
+     </div>
+     <div class="project-item" style="background-color:#7EC3F3;">
+      <h3><a class="session-title" data-toggle="collapse" href="#abs-2" style="color: black;"> <strong>November 06</strong></a></h3>
+        
+        <p class="speakers-list" style="color:black;"> <strong>Apache Beam:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+        </p>
+        <div class="collapse card-abstract" id="abs-2" style="color: black;">
+            <div><a href="/events" style="color: black;">See more...</a></div>
+    </div>
+   </div>
+   <div class="project-item" style="background-color:#CDBAFF;">
+    <h3><a class="session-title" data-toggle="collapse" href="#abs-3" style="color: black;"> <strong>November 18</strong></a></h3>
+        
+    <p class="speakers-list" style="color:black;"> <strong>Apache Airflow:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+    </p>
+    <div class="collapse card-abstract" id="abs-3" style="color: black;">
+        <div><a href="/events" style="color: black;">See more...</a></div>
+</div>
+ </div>
+    </div>
+  </div>
+
+
+
+  </div>
+</div>
+
+
+
+<!-- About Section 
+{{ with $data.homepage.event_info }}
+<section class="about-section" id="about-section">
+  <a id="event-info" style="padding-top: 40px; margin-top: -40px;"></a>
+  <div class="anim-icons full-width">
+    <span class=""></span>
+    <span class="icon icon-circle-1"></span>
+  </div>
+  <div class="auto-container">
+    <div class="row">-->
+      <!-- Content Column
+      <div class="content-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <div class="sec-title">
+            <span class="title">{{ .pretitle}}</span>
+            <h2>{{ .title }}</h2>
+            <div class="text">{{ .description }}</div>
+          </div>
+          <div class="btn-box">
+            <a href="{{ .cta_link }}" target="_blank" class="theme-btn btn-style-two"><span
+                class="btn-title">{{ .cta_text }}</span></a>
+          </div>
+        </div>
+      </div>-->
+
+      <!-- Image Column 
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="">
+          <figure class=""><img src="/images/Events.png" alt=""></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}-->
+<!--End About Section -->

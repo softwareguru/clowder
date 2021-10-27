@@ -1,0 +1,168 @@
+//Details projects
+
+.upcoming-event-title{
+    color: $primary-color;
+    background-color: #F1F2F2;
+    padding: 20px 30px 10px 30px;
+    text-align: center;
+    margin-left: -5%;
+    margin-right: -7%;
+    border-radius: 30px 0px 0px 30px;
+    
+}
+
+.project-item{
+    padding: 20px 30px 10px 30px;
+    border-radius: 0px 30px 30px 0px;
+    
+}
+
+
+//.recording{
+//    border-radius: 20px 20px 20px 20px;
+//    padding: 2px 3px 1px 3px;
+//    background-color: #F1F2F2;
+//}
+
+.fa{
+    color: black;
+}
+
+.fa.fa-download{
+    color: white;
+}
+
+.details-project{
+    padding: 20px 0px 0px 30px;
+}
+
+.links{
+    background-color: #8B7AFF;
+    padding: 50px 30px 50px 30px;
+    border-radius: 0px 0px 0px 15px;
+    color: black;
+    margin-top: 45%;
+    margin-bottom: -5%;
+    margin-right: -5%;
+}
+
+.social-links{
+    margin-top: 122%;
+    margin-left: -55%;
+}
+
+
+.social-item{
+    background-color: #f6f2b1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.social-item-1{
+    background-color: #CAEBEA;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.social-item-2{
+    background-color: #8B7AFF;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.social-item-3{
+    background-color: #7EC3F3;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px 0px 15px 0px;
+}
+
+
+
+
+//events
+
+
+
+.card-events{
+    border-radius: 10px 5px 50px 5px;
+
+}
+
+
+.image-card{
+    display: block;
+    margin-top: 10%;
+}
+
+
+.event-title{
+    color: $primary-color;
+}
+
+.event-description{
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+// Events (list and sigle pages)
+
+
+.border-title{
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F2F2;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.details-talk{
+    padding: 25px 20px 25px 20px;
+    background-color: $fourth-color;
+    margin-top: -1%;
+    text-align: center;
+    border-radius: 0px 0px 30px 0px;
+}
+
+
+
+
+.event-talk{
+    border-radius: 10px 5px 50px 5px;
+    background-color: $primary-color;
+}
+
+
+.title-titlecard{
+    color: #000000;
+  
+}
+
+.talk-text{
+    color:#000000;
+    margin-top: 10px;
+}
+
+.btn-talkcard{
+    color: $tertiary-color;
+       
+}
+
+
+
+
+
+
+
+
+
+// Talks (list and single pages)
+
+.talk{
+    padding: 25px 20px 25px 20px;
+    background-color: #F1F2F2;
+    border-radius: 10px 5px 50px 5px;
+}
+
+.title-talk{
+    color: $primary-color;
+}

@@ -1,0 +1,89 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<div class="container mb-4">
+    <p class="text-center">
+        {{ .Content }}
+    </p>
+
+    <div class="schedule-block">
+      <div class="session-item">
+        <img src="/images/logos/airflow.png" alt="" >
+
+      <div class="session-info">
+
+      
+      
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <h4>Feb 2</h4>
+      <p>5 PM PST</p>
+
+      <br>
+      <div class="">
+        <a href="#" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Register now!</span></a>
+    </div>
+
+    </div>
+
+    </div>
+
+        
+    <img src="/images/icons/talks-cat.png" alt="" width="80">
+
+      <div class="session-item">
+        <h2 class="">TALKS</h2>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Read more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+    
+
+    
+
+
+    <!--<table data-toggle="table" data-search="true" data-search-align="left">
+        <thead>
+          <tr>
+            <th data-field="title">Title</th>
+            <th data-field="speaker">Speaker(s)</th>
+            <th data-field="recording">Recording</th>
+            <th data-field="slides">Slides</th>
+          </tr>
+        </thead>
+        <tbody>
+    {{ range sort (where $.Site.RegularPages "Section" "sessions") ".Params.time_end" }}
+    <tr>
+        <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
+        <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
+        <td class="text-center">{{ with .Params.video }}<a href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i class="fa fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>            
+        <td class="text-center">{{ with .Params.slides }}<a href='{{ if hasPrefix . "http" }}{{ . }}{{ else }}/istiocon-2021/slides/{{ . }}{{ end }}' target="_blank" download><i class="fa fa-download" aria-hidden="true" title="Slides"></i></a>{{ end }}</td>
+    </tr>    
+    {{ end }}
+    </tbody>
+    </table>-->
+</div>
+
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data }}
+
+<div class="container my-4">
+
+  {{ with $data.homepage.sponsor }}
+  {{ range .sponsor_group }}
+  <div style="text-align: center;">
+    {{ range .sponsor }}
+    <div style="width:140px; display:inline-block; margin:20px;">
+      {{ if and (ne .link "") (ne .link "#") }}
+      <a href="{{ .link }}"><img style="width:100%;" src="{{ .logo | absURL }}" alt="" class="img-fluid"></a>
+      {{ else }}
+      <img style="width:100%;" src="{{ .logo | absURL }}" alt="" class="img-fluid">
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+
+{{ end }}

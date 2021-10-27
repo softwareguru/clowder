@@ -1,0 +1,115 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<div class="container">
+    <p class="text-center">
+        {{ .Content }}
+    </p>
+    <br>
+    <div class="row">
+      <div class="col-12 col-md-6 px-3 mb-3">
+        <div class="card-events card mb-6 shadow p-3 mb-5 bg-white" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="image-card col-md-4">
+              <img src="/images/logos/beam.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="event-title"><strong> Lorem ipsum dolor sit amet consectetur.</strong></h4>
+                <p class="event-sub">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="">
+                  <a href="/details-project/" class="theme-btn btn-style-two"><span class="btn-title">More details</span></a>
+                                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-md-6 px-3 mb-3">
+          <div class="card-events card mb-6 shadow p-3 mb-5 bg-white" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="image-card col-md-4">
+                <img src="/images/logos/cdap.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="event-title"><strong> Lorem ipsum dolor sit amet consectetur.</strong></h4>
+                  <p class="event-sub">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="">
+                    <a href="/details-project/" class="theme-btn btn-style-two"><span class="btn-title">More details</span></a>
+                                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-12 col-md-6 px-3 mb-3">
+            <div class="card-events card mb-6 shadow p-3 mb-5 bg-white" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="image-card col-md-4">
+                  <img src="/images/logos/data_lake.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h4 class="event-title"><strong> Lorem ipsum dolor sit amet consectetur.</strong></h4>
+                    <p class="event-sub">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="">
+                      <a href="/details-project/" class="theme-btn btn-style-two"><span class="btn-title">More details</span></a>
+                                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-md-6 px-3 mb-3">
+              <div class="card-events card mb-6 shadow p-3 mb-5 bg-white" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="image-card col-md-4">
+                    <img src="/images/logos/airflow.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 class="event-title"><strong> Lorem ipsum dolor sit amet consectetur.</strong></h4>
+                      <p class="event-sub">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="">
+                        <a href="/details-project/" class="theme-btn btn-style-two"><span class="btn-title">More details</span></a>
+                                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+      
+      
+              
+    </div>
+    
+
+
+    <!--<table data-toggle="table" data-search="true" data-search-align="left">
+        <thead>
+          <tr>
+            <th data-field="title">Title</th>
+            <th data-field="speaker">Speaker(s)</th>
+            <th data-field="recording">Recording</th>
+            <th data-field="slides">Slides</th>
+          </tr>
+        </thead>
+        <tbody>
+    {{ range sort (where $.Site.RegularPages "Section" "sessions") ".Params.time_end" }}
+    <tr>
+        <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
+        <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
+        <td class="text-center">{{ with .Params.video }}<a href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i class="fa fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>            
+        <td class="text-center">{{ with .Params.slides }}<a href='{{ if hasPrefix . "http" }}{{ . }}{{ else }}/istiocon-2021/slides/{{ . }}{{ end }}' target="_blank" download><i class="fa fa-download" aria-hidden="true" title="Slides"></i></a>{{ end }}</td>
+    </tr>    
+    {{ end }}
+    </tbody>
+    </table>-->
+</div>
+
+{{ end }}

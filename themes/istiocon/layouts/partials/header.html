@@ -1,0 +1,52 @@
+<!-- Navigation Start -->
+<header class="header-bar main-header header-style-two">
+  <nav class="main-menu navbar navbar-expand-lg main-nav fixed-top bg-light">
+    <div class="container">
+      <!-- LOGO BAR -->
+      <a class="navbar-brand" href='{{ "/" | relURL }}'>
+        <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" class="img-fluid logo-b" >
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="tf-ion-android-menu"></span>
+      </button>
+
+      <!--  MAIN MENU  -->
+      <div class="collapse navbar-collapse text-center" id="navigation" style="margin-left: -21px;">
+        <ul class="navigation navbar-nav mx-auto">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | relURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
+            {{ else }}
+            <li>
+              <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          {{ end }}
+
+          {{ with .Site.Params.navigation_button }}
+          <li>
+            <a href="{{ .link | relURL }}"
+            class="theme-btn btn-style-one text-white px-3">{{ .label }}</a>
+          </li>
+          {{ end }}
+        </ul>                
+      
+
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Navigation End -->
+
+

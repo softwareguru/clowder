@@ -1,0 +1,27 @@
+schedule:
+  enable : true
+  title_outline : "Schedule"
+  title : ""
+  schedule_tab:
+    ################# tab itam loop ################
+    - title : "Monday"
+      date_time : "August 24th"
+          
+    ################# tab itam loop ################
+    - title : "Tuesday"
+      date_time : "August 25th"
+          
+    ################# tab itam loop ################
+    - title : "Wednesday"
+      date_time : "August 26th"
+
+    ################# tab itam loop ################
+    - title : "Thursday"
+      date_time : "August 27th"
+          
+    ################# tab itam loop ################
+    - title : "Friday"
+      date_time : "August 28th"
+
+          
+

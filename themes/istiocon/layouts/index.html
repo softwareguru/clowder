@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data }}
+
+
+<!-- banner -->
+{{ with $data.homepage.banner }}
+<section class="section banner">
+  <div class="auto-container">
+    <div class="hero-title">
+      <div class="title-about shadow rounded" >
+        <h1 style="color: white;">
+          {{ .title }}
+        </h1>
+         {{ with .date_time }}
+          <p>{{ . }}</p>
+        {{ end }} 
+      </div>
+  {{ with .venue }}
+    <p>{{ . }}</p>
+  {{ end }}  
+</div>
+
+
+ <!-- {{ if .button1.enable }}
+    {{ with .button1 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">{{ .label }}</span></a>
+    {{ end }}
+  {{ end }}
+
+  {{ if .button2.enable }}
+    {{ with .button2 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner2 mt-3 ml-4">{{ .label }}</a>
+    {{ end }}
+  {{ end }}
+</div>-->
+</section>
+{{ end }}
+<!-- /banner -->
+
+<!-- timer  -->
+{{ if $data.homepage.timer.enable }}
+{{ partial "timer.html" . }}
+{{ end }}
+<!-- /timer -->
+
+
+<!-- event_info  -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "upcoming-event.html" . }}
+{{ end }}
+<!-- /event_info -->
+
+<!-- cta_cfp  -->
+{{ if $data.homepage.cta_cfp.enable }}
+{{ partial "cta_cfp.html" . }}
+{{ end }}
+<!-- /cta_cfp -->
+
+
+<!-- schedule -->
+{{ if $data.homepage.schedule.enable }}
+{{ partial "schedule.html" . }}
+{{ end }}
+<!-- /schedule -->
+
+<!-- pricing -->
+{{ if $data.homepage.pricing.enable }}
+{{ partial "pricing.html" . }}
+{{ end }}
+<!-- /pricing  -->
+
+<!-- speaker -->
+{{ if $data.homepage.speakers.enable }}
+<section class="section speakers">
+  <div class="container">
+    {{ with $data.homepage.speakers }}
+    {{ partial "section_title.html" . }}
+    {{ end }}
+    <div class="speakers-wrapper">
+      {{ range (where (where .Site.RegularPages "Type" "speakers") ".Params.featured" true) }}
+      <div class="speaker">
+        <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" class="img-fluid rounded-circle">
+        <h4 class="mb-0 mt-3"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <p>{{ .Params.Designation }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /speaker -->
+
+<!-- sponsor -->
+{{ if $data.homepage.sponsor.enable }}
+{{ partial "sponsor.html" . }}
+{{ end }}
+<!-- /sponsor -->
+
+<!-- blog -->
+{{ if $data.homepage.blog.enable }}
+{{ partial "blog.html" . }}
+{{ end }}
+<!-- /blog -->
+
+
+{{ end }}

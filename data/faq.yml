@@ -1,0 +1,90 @@
+faq:
+  enable : true
+  title_outline : ""
+  title : ""
+  faq_tab_left:
+    ################# tab itam loop ################
+    - title : "How do I register for this event?"
+      description : "Visit the registration page here and enter your information. Once you’ve registered, watch for a confirmation email that contains your login information for the conference. There is no cost to attend IstioCon 2021."
+      
+          
+    ################# tab itam loop ################
+    - title : What will I get to access by registering?
+      description : |
+      
+        Learn from Istio experts across the globe! Presentations will include:
+
+         * Keynotes.
+         * Roadmap sessions.
+         * 10-minute lightning talks presented by individual speakers.
+         * 40-minute presentations by speakers on specific topics.
+         * 40-minute panel discussions.
+         * 150-minute, in-depth, hands-on workshops.
+
+         <br>
+
+        Connect with other Istio and Open Source ecosystem community members through social hour events including:
+
+         * Spatial video-chat world activities via Gather.town.
+         * Virtual swag bags.
+         * A live cartoonist.
+         * Raffles.
+         * Live music.
+         * Games.
+         
+         <br>
+
+         Get cool swag shipped to your location*.
+
+    ################# tab itam loop ################
+    - title : When will the session schedule be posted?
+      description : "The schedule will be announced on January 25, 2021. You can refer to the [schedule page](https://events.istio.io/istiocon-2021/program/) for more details."
+
+
+    ################# tab itam loop ################
+    - title : "How can I watch the sessions?"
+      description : "Once you have registered and the event has begun, just click on the LIVE button that will show at the event homepage, share your email, and enjoy the conference!"
+
+    ################# tab itam loop ################
+    - title : "Does participation have a cost?"
+      description : "There is no cost to attend IstioCon 2021. Please enjoy the conference!"
+      
+
+
+########################### right side of faq ##########################
+
+
+
+  faq_tab_rigth:
+    ################# tab itam loop ################
+    - title : "How can I interact with other participants?"
+      description : "The event chat will be the [Istio slack](https://istio.slack.com/) event channels, and there we will have many networking opportunities, besides different activities like: Virtual photo booth, Raffles, Scaver hunt, etc. [More details](https://events.istio.io/istiocon-2021/networking/).
+
+      <br>
+      
+      We’re excited to be using Gather.town, to provide a way for you to virtually tour the social hours area and interact with others through conversation and chat.
+      Find more ways to get involved with the Istio community apart from IstioCon 2021 [here](https://istio.io/latest/about/community/join/)."
+      
+          
+    ################# tab itam loop ################
+    - title : "Will recorded sessions be available after the event?"
+      description : "Yes, all sessions will be recorded. Once each session is over, a recording will be available from the transmission screen (Crowdcast schedule menu), and after the conference they will be posted on our [YouTube channel](https://www.youtube.com/channel/UC-zVlo1F3mUbExQ96fABWcQ). Watch for an email after the event with more information about accessing session recordings."
+
+    ################# tab itam loop ################
+    - title : "Who do I contact with questions?"
+      description : "Please feel free to reach out to us at istiocon@istio.io with questions or concerns."
+
+    ################# tab itam loop ################
+    - title : "Is there a code of conduct?"
+      description : "Yes. IstioCon 2021 promotes and encourages a set of shared values to improve our productivity and interpersonal interactions. Only by respecting each other can we develop a productive, collaborative community. You can find the Istio Code of conduct [here](https://github.com/istio/community/blob/master/CONTRIBUTING.md#code-of-conduct)."
+      
+     ################# tab itam loop ################
+    - title : "How can my company sponsor the event?"
+      description : "We have a [partnership program](https://events.istio.io/istiocon-2021/partner/IstioCon%202021_%20Partner%20Packages.pdf)."
+  
+          
+  
+
+
+          
+

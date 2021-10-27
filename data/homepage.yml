@@ -1,0 +1,96 @@
+############################# banner ################################
+banner:
+  enable : true
+  title : "About Clowder"
+  logo : "/images/logo.svg"
+  bg_image: "images/Clowder_home.jpg"
+  date_time : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit, aliquam, tenetur aut deleniti nisi illo odio magnam libero iusto, ipsam sit eaque repellendus rem quaerat provident fugiat exercitationem eius? Vero laboriosam iure tenetur deleniti inventore consequatur illo itaque nemo?"
+  venue : ""
+  button1:
+    enable : false
+    label : "Register Now!"
+    link : "#"
+  button2:
+    enable : true
+    label : "Watch now!"
+    link : "/live"
+
+
+############################## Event ##############################
+event_info:
+  enable : true
+  pretitle: "About Clowder"
+  title : "Come with us!"
+  description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit assumenda, voluptas aperiam laudantium illum doloremque sapiente quaerat iusto veritatis id voluptatum sequi quod, consectetur cupiditate provident, dolorem nisi quia dolore. Iste ea vero distinctio, non obcaecati fugit iure quibusdam dolore harum debitis eius corporis? Nesciunt provident voluptatum fuga illum."
+  cta_text: "Register Now"
+  cta_link: "#"
+  features: 
+    - number : "5"
+      label : "Days"
+      
+    - number : "15+"
+      label : "Sessions"
+
+    - number : "100%"
+      label : "Free"
+
+    - number : "Everybody"
+      label : "is welcome"
+
+####################### Timer #############################
+timer:
+  enable : false
+
+####################### CTA CFP #############################
+cta_cfp:
+  enable : true
+
+
+####################### Clients Section #############################
+sponsor:
+  enable : false
+
+  sponsor_group:
+  - title : "Partners"
+    slug : "partner"
+
+    sponsor:
+      - logo : "images/partners/google.png"
+        link : "https://cloud.google.com/"
+      - logo : "images/partners/AspenMesh.png"
+        link : "https://aspenmesh.io/"
+      - logo : "images/partners/solo.io.png"
+        link : "https://www.solo.io/"
+      - logo : "images/partners/IBM.jpg"
+        link : "https://www.ibm.com/"
+      - logo : "images/partners/tetrate.png"
+        link : "https://www.tetrate.io/"
+      - logo : "images/partners/redhat.png"
+        link : "https://www.redhat.com/"
+      - logo : "images/partners/CISCO.png"
+        link : "https://www.cisco.com/"
+      - logo : "images/partners/manning.png"
+        link : "https://www.manning.com/"
+      - logo : "images/partners/rancher-federal.png"
+        link : "https://rancherfederal.com/"
+      
+
+
+####################### Schedule #############################
+schedule:
+  enable : false
+
+  
+
+####################### pricing #############################
+pricing:
+  enable : false
+
+
+########################## speaker ##########################
+speakers:
+  enable : false
+  title : "Key speakers"
+  pretitle : "Speakers"
+  description: ""
+

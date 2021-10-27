@@ -1,0 +1,80 @@
+.section.banner {
+  background-color: #000a54;
+  background-image: url(/images/Clowder_home.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 25vh;
+  text-align: center;
+  color: rgb(12, 12, 12);
+
+  .hero-title {
+    width: 900px;
+    margin: 0.9em auto;
+    background-color: rgba(126, 194, 243, 0.65);
+    border-radius: 30px 30px 30px 30px;
+    color: black;
+    font-size: 46px;
+    padding: 40px 40px 40px 40px; 
+    margin-top: 20%;
+  }
+
+  .title-about{
+
+    background-color: rgba(140, 122, 255, 0.794);
+    padding: 20px 30px 10px 30px;
+    border-radius: 30px 30px 30px 30px;
+    color: white;
+  }
+
+  @media (max-width:550px) {
+    
+    .hero-title {
+      width: 300px;
+      margin-top: 10px;
+      font-size: 46px;
+    }
+    
+  }
+
+  p {
+    font-size: 0.5em;
+    margin: 0.2em auto;
+  }
+
+  @media (max-height:720px) {
+    height: 720px;
+  }
+
+  .scroll-link {
+    margin-top: 30px;
+  }
+
+  .scroll-link img {
+    height: 30px;
+  }
+
+
+  .btn-banner1 {
+    background-color: $gray-light;
+    color: $yellow2;
+    font-weight: 500;
+    letter-spacing: .1em;
+
+    &:hover {
+      color: $yellow2;
+      background-color: #e0e0e0;
+    }
+  }
+
+  .btn-banner2 {
+    background-color: #ff2040;
+    color: $white;
+    font-weight: 500;
+    letter-spacing: .1em;
+
+    &:hover {
+      background-color: #ff4060;
+      color: $white;
+    }
+  }
+}

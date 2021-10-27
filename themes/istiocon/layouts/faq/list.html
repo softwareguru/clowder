@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data }}
+{{ $faq := $data.faq.faq }}
+
+ <!-- FAQ's Section -->
+ <section class="faq-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+      
+        <div class="row clearfix">
+            {{ range .Data.Pages.ByTitle }}
+            <!-- Content Column -->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    
+                    <!--Accordian Box-->
+                    <ul class="accordion-box" style ="list-style-type: none;">
+                        {{ $.Scratch.Set "counter" 0 }}
+                        {{ range $index, $element := $faq.faq_tab_left }}
+                         
+                     <!--Block-->
+                     <li class="accordion block wow fadeInUp {{ if eq $index 0 }} active-block {{ end }}">
+                        <div class="acc-btn {{ if eq $index 0 }} active{{ end }}"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-down"></span> </div>{{ .title | markdownify }}</div>
+                        <div class="acc-content {{ if eq $index 0 }} current {{ end }}">
+                            <div class="content ">
+                                <div class="text">{{ .description | markdownify }}
+                                 </div>
+                            </div>
+                        </div>
+                    </li>
+                    {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <!--Accordian Box-->
+                    <ul class="accordion-box" style ="list-style-type: none;">
+                        {{ $.Scratch.Set "counter" 0 }}
+                        {{ range $index, $element := $faq.faq_tab_rigth }}
+                         <!--Block-->
+                         <li class="accordion block wow fadeInUp">
+                            <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-down"></span> </div>{{ .title | markdownify }}</div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <div class="text">{{ .description | markdownify }}</a> 
+                                    </div>
+                               </div>
+                            </div>
+                        </li>
+                        {{ end }}
+                </ul>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        
+    </div>
+</section>
+<!-- End FAQ's Section -->
+
+{{ end }}

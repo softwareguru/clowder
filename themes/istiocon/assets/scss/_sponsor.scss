@@ -1,0 +1,38 @@
+
+
+
+.bg-black {
+	background: #000;
+}
+
+.letter-spacing {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+.bg-gray {
+	background: #eee;
+}
+
+.sponsor-strip.partner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 50px;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+
+	@include tablet {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 40px;
+	}
+
+	@include mobile {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}

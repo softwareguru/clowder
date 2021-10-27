@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+<!-- Speakers Section -->
+<section class="organizers" id="speakers-section">
+  <div class="auto-container">
+
+    <h3>Program Committee (English)</h3>
+    <div class="team-strip">
+      {{ range where .Data.Pages "Params.group" "pc" }}
+      <div class="profile-item">
+        <div class="headshot">
+          <img src="{{ .Params.image | relURL }}" alt="" class="img-fluid rounded-circle img-thumbnail">
+        </div>
+        <div class="info text-center">
+          <h4 class="mt-3">{{ .Title }}</h4>
+          <p class="designation">{{ .Params.Designation}}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <h3>Program Committee (Chinese)</h3>
+    <div class="team-strip">
+      {{ range where .Data.Pages "Params.group" "cc" }}
+      <div class="profile-item">
+        <div class="headshot">
+          <img src="{{ .Params.image | relURL }}" alt="" class="img-fluid rounded-circle img-thumbnail">
+        </div>
+        <div class="info text-center">
+          <h4 class="mt-3">{{ .Title }}</h4>
+          <p class="designation">{{ .Params.Designation}}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+
+    <h3>Organization</h3>
+    <div class="team-strip">
+      {{ range where .Data.Pages "Params.group" "oc" }}
+      <div class="profile-item">
+        <div class="headshot">
+          <img src="{{ .Params.image | relURL }}" alt="" class="img-fluid rounded-circle img-thumbnail">
+        </div>
+        <div class="info text-center">
+          <h4 class="mt-3">{{ .Title }}</h4>
+          <p class="designation">{{ .Params.Designation}}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <h3>Produced by Software Guru</h3>
+    <div class="team-strip">
+      {{ range where .Data.Pages "Params.group" "sg" }}
+      <div class="profile-item">
+        <div class="headshot">
+          <img src="{{ .Params.image | relURL }}" alt="" class="img-fluid rounded-circle img-thumbnail">
+        </div>
+        <div class="info text-center">
+          <h4 class="mt-3">{{ .Title }}</h4>
+          <p class="designation">{{ .Params.Designation}}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

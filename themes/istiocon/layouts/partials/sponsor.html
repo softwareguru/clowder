@@ -1,0 +1,34 @@
+{{ $data := index .Site.Data }}
+
+{{ with $data.homepage.sponsor }}
+
+<!--Clients Section-->
+<section class="sponsors mb-4">
+  <div class="page-wrapper">
+    <div class="auto-container">
+      <div class="sec-title text-center mt-4">
+        <h2>Partners</h2>
+      </div>
+      {{ range .sponsor_group }}
+      <div class="sponsor-strip {{ .slug }} mb-4">
+        {{ range .sponsor }}
+        <div class="sponsor-item">
+          {{ if and (ne .link "") (ne .link "#") }}
+          <a href="{{ .link }}"><img src="{{ .logo | relURL }}" alt="" class="img-fluid"></a>
+          {{ else }}
+          <img src="{{ .logo | relURL }}" alt="" class="img-fluid">
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+<!--End Clients Section-->
+
+
+
+
+{{ end }}

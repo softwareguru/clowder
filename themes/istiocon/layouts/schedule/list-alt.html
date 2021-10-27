@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+<div class="container mt-4">
+    <div class="row">
+        {{ .Content }}
+    </div>
+    <table data-toggle="table" data-search="true">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Title</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ range where $.Site.RegularPages "Section" "sessions" }}
+          <tr>
+            <td id="time-{{.Params.id}}"></td>
+            <td>{{ .Title }}</td>
+            <td>{{ .Params.language }}</td>
+          </tr>          
+        {{ end }}
+        </tbody>
+      </table>
+  
+</div>
+
+
+{{ end }}

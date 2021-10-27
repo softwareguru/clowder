@@ -1,0 +1,180 @@
+
+######################## default configuration ####################
+baseURL = "https://events.istio.io/"
+title = "Clowder"
+enableRobotsTXT = true
+DefaultContentLanguage = "en"
+RemovePathAccents = true
+
+googleAnalytics = "G-QB7JLQ9ECY"
+
+publishDir = "public/"
+
+theme = "istiocon"
+# post pagination
+paginate = "10"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+speaker = "speakers"
+
+# output
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "/plugins/bootstrap/css/bootstrap.min.css"
+[[params.plugins.css]]
+link ="/plugins/color-switcher-design/color-switcher-design.css"
+[[params.plugins.css]]
+link = "/plugins/themefisher-font/themefisher-font.min.css"
+[[params.plugins.css]]
+link = "/plugins/animate/animate.css"
+[[params.plugins.css]]
+link = "/plugins/flaticon/flaticon.css"
+[[params.plugins.css]]
+link = "https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css"
+
+#[[params.plugins.css]]
+#link = "/plugins/style/style.css"
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "/plugins/jquery/jquery.js"
+
+[[params.plugins.js]]
+link="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+
+[[params.plugins.js]]
+link = "/plugins/bootstrap/js/bootstrap.min.js"
+
+[[params.plugins.js]]
+link = "/plugins/jquery/jquery.countdown.js"
+
+[[params.plugins.js]]
+link="https://kit.fontawesome.com/2e09285ae6.js"
+
+[[params.plugins.js]]
+link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
+
+#[[params.plugins.js]]
+#link="/plugins/owl/owl.js"
+
+#[[params.plugins.js]]
+#link="/plugins/wow/wow.js"
+
+#[[params.plugins.js]]
+#link="/plugins/parallax/parallax.min.js"
+
+#[[params.plugins.js]]
+#link="/plugins/script/script.js"
+
+
+
+
+
+############################## navigation ###############################
+[menu]
+
+  [[menu.main]]
+  name = "Events"
+  URL = "/event-list/"
+  weight = 2
+
+  #[[menu.main]]
+  #name = "Talks"
+  #URL = "/talks"
+  #weight = 3
+
+  [[menu.main]]
+  name = "Projects"
+  URL = "/projects"
+  weight = 1
+
+  [[menu.main]]
+  name = "About"
+  URL = "/about"
+  weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "/images/Clowder-Logo.png"
+home = "Home"
+
+# Meta data
+description = "IstioCon 2021 is a community-led online conference, featuring technical talks, case studies and networking activities with Istio users and developers across the world."
+image = "/istiocon-2021/images/card.jpg"
+images = ["/istiocon-2021/images/card.jpg"]
+twitter_user = "@istiocon"
+email = "istiocon@googlegroups.com"
+author = "Software Guru"
+
+# search for blog page
+search = true
+
+disclaimer = ""
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+#[params.navigation_button]
+#label = "LIVE"
+#link = "/live"
+
+
+############################# social icon ############################
+[[params.social]]
+icon = "tf-ion-social-twitter"
+link = "#"
+
+[[params.social]]
+icon = "tf-ion-social-youtube"
+link = "#"
+
+[[params.social]]
+icon = "fab fa-slack"
+link = "#"
+
+[[params.social]]
+icon = "tf-ion-android-mail"
+link = "#"
+
+[[params.footer_about]]
+name = "Know us"
+link = "#"
+
+[[params.footer_resources]]
+name = "Organizers"
+link = "#"
+
+[[params.footer_resources]]
+name = "Code of Conduct"
+link = "#"
+
+[[params.footer_resources]]
+name = "Privacy policy"
+link = "#"
+
+#[[params.footer_resources]]
+#name = "Call for papers"
+#link = "https://sessionize.com/istiocon-2021/"
+
+#[[params.footer_resources]]
+#name = "Partnership opportunities"
+#link = "/istiocon-2021/partner/IstioCon2021_Partner_Packages_v2.pdf"
+
+
+
