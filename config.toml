@@ -1,6 +1,6 @@
 
 ######################## default configuration ####################
-baseURL = "https://events.istio.io/"
+baseURL = "http://clowder.dev/"
 title = "Clowder"
 enableRobotsTXT = true
 DefaultContentLanguage = "en"
@@ -10,7 +10,7 @@ googleAnalytics = "G-QB7JLQ9ECY"
 
 publishDir = "public/"
 
-theme = "istiocon"
+theme = "clowder"
 # post pagination
 paginate = "10"
 
@@ -112,9 +112,9 @@ logo = "/images/Clowder-Logo.png"
 home = "Home"
 
 # Meta data
-description = "IstioCon 2021 is a community-led online conference, featuring technical talks, case studies and networking activities with Istio users and developers across the world."
-image = "/istiocon-2021/images/card.jpg"
-images = ["/istiocon-2021/images/card.jpg"]
+description = "Coming soon."
+image = "/images/Clowder_home.jpg"
+images = ["/images/Clowder_home.jpg"]
 twitter_user = "@istiocon"
 email = "istiocon@googlegroups.com"
 author = "Software Guru"
