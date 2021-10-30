@@ -86,24 +86,35 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
 [menu]
 
   [[menu.main]]
-  name = "Events"
-  URL = "/event-list/"
-  weight = 2
-
-  #[[menu.main]]
-  #name = "Talks"
-  #URL = "/talks"
-  #weight = 3
-
-  [[menu.main]]
-  name = "Projects"
+  name = "PROJECTS"
   URL = "/projects"
   weight = 1
 
   [[menu.main]]
-  name = "About"
+  identifier = "event"
+  name = "Events"
+  #URL = "/event-list/"
+  weight = 2
+
+  [[menu.main]]
+    identifier = "program1"
+    name = "Upcoming Events"
+    URL = "/upcoming-events/"
+    parent = "event"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "program2"
+    name = "Previous Events"
+    url = "/previous-events/"
+    parent = "event"
+    weight = 2
+
+
+  [[menu.main]]
+  name = "ABOUT"
   URL = "/about"
-  weight = 4
+  weight = 3
 
 
 #################### default parameters ################################
