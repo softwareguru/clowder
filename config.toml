@@ -110,11 +110,15 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
     parent = "event"
     weight = 2
 
+  [[menu.main]]
+  name = "HOST A MEETUP"
+  URL = "/host-meetup"
+  weight = 3
 
   [[menu.main]]
   name = "ABOUT"
   URL = "/about"
-  weight = 3
+  weight = 4
 
 
 #################### default parameters ################################
@@ -167,6 +171,10 @@ link = "#"
 name = "Know us"
 link = "#"
 
+[[params.footer_about]]
+name = "Contact us"
+link = "#"
+
 [[params.footer_resources]]
 name = "Organizers"
 link = "#"
@@ -186,6 +194,9 @@ link = "#"
 #[[params.footer_resources]]
 #name = "Partnership opportunities"
 #link = ""
+
+
+
 
 
 
