@@ -3,7 +3,7 @@
 {{ partial "page-title.html" . }}
 
 <div class="container">
-    <table data-toggle="table" data-search="true" data-search-align="left">
+    <table data-toggle="table" data-search="true" data-search-align="left" style="border-collapse: separate; border-radius: 10px; padding: 10px;" >
         <thead>
           <tr>
             <th data-field="project">Project</th>
@@ -13,43 +13,17 @@
           </tr>
         </thead>
         <tbody>
-    
+            {{ range sort (where $.Site.RegularPages "Section" "events")}}
+
     <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/29/2021</td>
+        {{ range (.GetTerms "projects") }}
+        <td><a class="session-title" href="{{ .Permalink }}">{{ .Params.title }}</a></td>
+        {{ end }}
+        <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
+        <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
+        <td>{{ .Date.Format "January 2, 2006" }}</td>
     </tr>
-    <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/20/2021</td>
-    </tr>
-    <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/19/2021</td>
-    </tr>
-    <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/15/2021</td>
-    </tr>
-    <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/10/2021</td>
-    </tr>
-    <tr>
-        <td><a class="" href="#">Title project</a></td>
-        <td><a class="session-title" href="#">Title session</a></td>
-        <td>Speaker(s) name</td>            
-        <td>October/05/2021</td>
-    </tr>
+    {{ end }}
     </tbody>
     </table>
 

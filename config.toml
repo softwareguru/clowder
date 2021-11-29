@@ -18,6 +18,8 @@ paginate = "10"
 tag = "tags"
 category = "categories"
 speaker = "speakers"
+project = "projects"
+event = "events"
 
 # output
 [outputs]

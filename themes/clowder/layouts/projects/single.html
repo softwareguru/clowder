@@ -1,0 +1,202 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<div class="container mb-4">
+    <p class="text-center">
+        {{ .Content }}
+    </p>
+
+    <div class="schedule-block" style="margin-top: 50px;">
+      <div class="row">
+        <div class="col col-lg-3">
+      <div class="session-item">
+     
+        <img src="{{ .Params.Image | relURL }}" alt="" >
+
+      </div>
+      </div>
+      <div class="col col-lg-7">
+    <div class="session-info title-talks border-title">
+     
+      <div class="row">
+                  
+        <div class="details-project col col-lg-7">
+            <h1><strong>{{ .Title }}</strong></h1>
+            <br>
+              <p>{{ .Params.Description }}</p>
+              
+        </div>
+        <div class="col col-lg-5">
+      <center>
+        <h2 class="links">LINKS</h2>
+      </center>
+        </div>
+      
+                  
+    </div>
+    
+</div>
+</div>
+<div class="col col-lg-2">
+  <div class="session-info title-talks">
+    <div class="container">
+     <center>
+      <div class="social-links row">
+        {{ with .Params.website }}
+        {{ if ne . "" }}
+        <div class="social-item col"><a href="#"><i class="fa fa-2x fa-globe"></i></a></div>
+        {{ end }}
+        {{ end }}
+
+        {{ with .Params.twitter }}
+        {{ if ne . "" }}
+        <div class="social-item-1 col"><a href="#"><i class="fa fa-2x fa-twitter"></i></a></div>
+        {{ end }}
+        {{ end }}
+
+        <div class="w-100"></div>
+
+        {{ with .Params.slack }}
+        {{ if ne . "" }}
+        <div class="social-item-2 col"><a href="#"><i class="fa fa-2x fa-slack"></i></a></div>
+        {{ end }}
+        {{ end }}
+
+        {{ with .Params.youtube }}
+        {{ if ne . "" }}
+        <div class="social-item-3 col"><a href="#"><i class="fa fa-2x fa-youtube"></i></a></div>
+        {{ end }}
+        {{ end }}
+
+      </div>
+    </center>
+     </div>
+
+</div>
+</div>
+    
+    </div>
+    
+      <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-md-5">
+     
+        <h2 class="upcoming-event-title"> 
+          <img src="/images/icons/Upcoming-events.png" alt="" width="90">UPCOMING EVENTS</h2>
+      </div>
+      <div class="col col-lg-6">
+        {{ range sort (where $.Site.RegularPages "Section" "events") }}
+        
+        <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
+          <h3><a class="session-title"  style="color: black;"> <strong>{{ .Date.Format "2 January at 3:04pm" }}
+          </strong></a></h3>
+          
+          <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong>{{ .Title }}</p>
+          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
+              <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
+      </div>
+       </div>
+      
+       {{ end }}
+
+       
+       
+      </div>
+    </div>
+    
+    <br><br>
+
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-md-5">
+     
+        <h2 class="upcoming-event-title"> 
+          <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
+      </div>
+      <div class="col col-lg-6">
+        <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-4">
+          <h3><a class="session-title" style="color: black;"> <strong>October 18</strong></a></h3>
+          
+
+          <div class="row">
+            
+            <div class="col col-lg-10">
+   
+          <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+          </p>
+     
+            </div>
+            <div class="col col-lg-2">
+              <center>
+                <div class="recording">
+                  <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
+                </div>
+                
+              
+          </center>
+            </div>
+          </div>
+                    <div class="collapse card-abstract" id="abs-4" style="color: black;">
+              <div><a href="/events" style="color: black;">See more...</a></div>
+      </div>
+       </div>
+       <div class="project-item" style="background-color:#7EC3F3;" data-toggle="collapse" href="#abs-5">
+        <h3><a class="session-title" style="color: black;"> <strong>October 17</strong></a></h3>
+          
+        <div class="row">
+            
+          <div class="col col-lg-10">
+ 
+        <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+        </p>
+   
+          </div>
+          <div class="col col-lg-2">
+            <center>
+              <div class="recording">
+                <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
+              </div>
+              
+            
+        </center>
+          </div>
+        </div>
+          <div class="collapse card-abstract" id="abs-5" style="color: black;">
+              <div><a href="#" style="color: black;">See more...</a></div>
+      </div>
+     </div>
+     <div class="project-item" style="background-color:#CDBAFF;" data-toggle="collapse" href="#abs-6">
+      <h3><a class="session-title" style="color: black;"> <strong>October 16</strong></a></h3>
+          
+      <div class="row">
+            
+        <div class="col col-lg-10">
+
+      <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+      </p>
+ 
+        </div>
+        <div class="col col-lg-2">
+          <center>
+            <div class="recording">
+              <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
+            </div>
+            
+          
+      </center>
+        </div>
+      </div>
+      <div class="collapse card-abstract" id="abs-6" style="color: black;">
+          <div><a href="#" style="color: black;">See more...</a></div>
+  </div>
+   </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+
+{{ end }}
