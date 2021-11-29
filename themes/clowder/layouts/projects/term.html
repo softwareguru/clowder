@@ -87,11 +87,13 @@
           <img src="/images/icons/Upcoming-events.png" alt="" width="90">UPCOMING EVENTS</h2>
       </div>
       <div class="col col-lg-6">
-        {{ $events := where .Site.RegularPages.ByDate "Section" "events" }}
-        {{ range where $events "Date" "ge" (now.AddDate 0 0 -1) }}
+        {{ range where .Data.Pages "Section" "events" }}
+        {{ $start_date := .Params.start_date | time }}
+        {{ if ge $start_date now }}
 
         <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
-          <h3><a class="session-title"  style="color: black;"> <strong>{{ .Date.Format "2 January at 3:04pm" }}
+          <h3><a class="session-title"  style="color: black;"><strong>
+            {{ $start_date.Format "2 January at 3:04pm" }}
           </strong></a></h3>
           
           <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong>{{ .Title }}</p>
@@ -101,7 +103,7 @@
        </div>
       
        {{ end }}
-
+       {{ end }}
        
        
       </div>
