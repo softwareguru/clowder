@@ -19,10 +19,12 @@
       
       <h2 class="title-talk border-title">{{ .Title }}</h2>
       <div class="details-talk col-sm-3">
+
+        {{ $start_date := .Params.start_date | time }}
       
-        <h3> <strong>{{ .Date.Format "2 Jan" }}
+        <h3> <strong>{{ $start_date.Format "2 Jan" }}
         </strong></h3>
-        <p>{{ .Date.Format "3:04pm" }} PST</p>
+        <p>{{ $start_date.Format "3:04pm" }}</p>
       </div>
       {{ with .Params.link}}
       <br>
@@ -47,7 +49,7 @@
 
       <div class="col col-lg-8">
         
-        {{ range sort (where $.Site.RegularPages "Section" "sessions") }}
+        {{ range sort (where $.Site.RegularPages "Section" "sessions")  }}
         <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
    
 

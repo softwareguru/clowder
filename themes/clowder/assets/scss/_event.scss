@@ -17,6 +17,19 @@
     
 }
 
+//Dinamic colors 
+
+.project-item:nth-child(3n) {
+  background-color: $color3;
+}
+.project-item:nth-child(3n+1) {
+  background-color: $color1;
+}
+.project-item:nth-child(3n+2) {
+  background-color: $color2;
+}
+
+
 
 //.recording{
 //    border-radius: 20px 20px 20px 20px;

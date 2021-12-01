@@ -1,16 +1,19 @@
 ---
-id: a0
-title: "Talk Airflow"
+id: a1
+title: "Test session"
 url: 
 speakers:
- - Pedro Galván
+ - Alberto
 projects:
  - Airflow
 date: 2021-11-22T09:50:00-06:00
-video: https://www.youtube.com/embed/194LCFWaEyE
+video: 
 slides: "#"
 link: 
 draft: false
+events: 
+ - Airflow
+
 ---
 
 This is a description to project: Airflow

@@ -86,12 +86,15 @@
         <h2 class="upcoming-event-title"> 
           <img src="/images/icons/Upcoming-events.png" alt="" width="90">UPCOMING EVENTS</h2>
       </div>
-      <div class="col col-lg-6">
+      <div class="col col-lg-6 colores">
+     
         {{ range where .Data.Pages "Section" "events" }}
         {{ $start_date := .Params.start_date | time }}
         {{ if ge $start_date now }}
 
-        <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
+ 
+        <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
+        
           <h3><a class="session-title"  style="color: black;"><strong>
             {{ $start_date.Format "2 January at 3:04pm" }}
           </strong></a></h3>
@@ -101,11 +104,12 @@
               <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
       </div>
        </div>
+ 
       
        {{ end }}
        {{ end }}
        
-       
+ 
       </div>
     </div>
     
@@ -119,10 +123,13 @@
         <h2 class="upcoming-event-title"> 
           <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
       </div>
-      <div class="col col-lg-6">
-        {{ range sort (where .Data.Pages "Section" "events")}}
-        <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
-          <h3><a class="session-title" style="color: black;"> <strong>{{ .Date.Format "2 January at 3:04pm" }}</strong></a></h3>
+      <div class="col col-lg-6 colores">
+        {{ range sort (where .Data.Pages "Section" "events").Reverse }}
+        {{ $start_date := .Params.start_date | time }}
+        {{ if lt $start_date now }}
+
+        <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
+          <h3><a class="session-title" style="color: black;"> <strong>{{ $start_date.Format "2 January 2006" }}</strong></a></h3>
           
 
           <div class="row">
@@ -147,6 +154,7 @@
               <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
       </div>
        </div>
+        {{ end }}
         {{ end }}
       </div>
     </div>

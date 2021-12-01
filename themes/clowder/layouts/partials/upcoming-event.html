@@ -13,34 +13,46 @@
       <h2 class="upcoming-event-title"> 
         <img src="/images/icons/Event.png" alt="" width="90">UPCOMING EVENTS</h2>
     </div>
-    <div class="col col-lg-7">
-      <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-1">
-        <h3><a class="session-title" style="color: black;"> <strong>November 04</strong></a></h3>
+    <div class="col col-lg-7 colores">
+      {{ range sort (where $.Site.RegularPages "Section" "events")}}
+      {{ $start_date := .Params.start_date | time }}
+      {{ if ge $start_date now }}
+
+      <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
+        <h3><a class="session-title" style="color: black;"> <strong>{{ $start_date.Format "2 January at 3:04pm" }}</strong></a></h3>
         
-        <p class="speakers-list" style="color:black;"> <strong>Data Lake:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
+
+        <div class="row">
+          
+          <div class="col col-lg-10">
+ 
+            <h5 style="color:black;" ><strong>Project: {{ .Params.projects }}</strong></h5>
+            
+        <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
         </p>
-        <div class="collapse card-abstract" id="abs-1" style="color: black;">
-            <div><a href="/events" style="color: black;">See more...</a></div>
+
+        
+   
+          </div>
+          <!--<div class="col col-lg-2">
+            <center>
+                
+              <div class="recording">
+                <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
+              </div>
+              
+            
+        </center>
+          </div>-->
+        </div>
+                  <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
+            <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
     </div>
      </div>
-     <div class="project-item" style="background-color:#7EC3F3;" data-toggle="collapse" href="#abs-2">
-      <h3><a class="session-title" style="color: black;"> <strong>November 06</strong></a></h3>
-        
-        <p class="speakers-list" style="color:black;"> <strong>Apache Beam:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
-        </p>
-        <div class="collapse card-abstract" id="abs-2" style="color: black;">
-            <div><a href="#" style="color: black;">See more...</a></div>
-    </div>
-   </div>
-   <div class="project-item" style="background-color:#CDBAFF;" data-toggle="collapse" href="#abs-3">
-    <h3><a class="session-title" style="color: black;"> <strong>November 18</strong></a></h3>
-        
-    <p class="speakers-list" style="color:black;"> <strong>Apache Airflow:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat.
-    </p>
-    <div class="collapse card-abstract" id="abs-3" style="color: black;">
-        <div><a href="#" style="color: black;">See more...</a></div>
-</div>
- </div>
+
+     {{ end }}
+     {{ end }}
+     
     </div>
   </div>
 
