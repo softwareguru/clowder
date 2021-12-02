@@ -19,8 +19,6 @@ tag = "tags"
 category = "categories"
 speaker = "speakers"
 project = "projects"
-session = "sessions"
-event = "events"
 
 
 # output

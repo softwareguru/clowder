@@ -21,8 +21,9 @@
               </a>
               {{ end }}
             </div>
+            {{ $start_date := .Params.start_date | time }}
             
-            <p class="session-meta" id="date">{{ .Date.Format "2 January at 3:04pm" }}</p>
+            <p class="session-meta" id="date">{{ $start_date.Format "2 January at 3:04pm" }}</p>
             <!--<p class="session-meta" id="lang">{{ with .Params.language }}Language: {{ humanize . }}{{ end }}</p>-->
             <div class="d-lg-none d-xl-none">
               By 

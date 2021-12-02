@@ -12,9 +12,7 @@
       <div class="session-item">
    
         {{ range (.GetTerms "projects") }}
-        <a href="{{.Permalink}}">
         <img src="{{ .Params.Image | relURL }}" alt="" >
-        </a>
         {{ end }}
 
       <div class="session-info">
@@ -49,12 +47,17 @@
           TALKS</h2>
       </div>
 
-      <div class="col col-lg-8 colores">
+      <div class="col col-lg-8">
         
-        {{ range .Params.sessions }}
-          {{ with $.Site.GetPage . }}
+        
+        {{ $sessions:= .Params.sessions }}
+        
+  
 
-        <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
+        {{ range sort (where $.Site.RegularPages "Section" "sessions")  }}
+  
+
+        <div class="project-item" style="background-color:#7878FF;" data-toggle="collapse" href="#abs-{{.Params.id}}">
    
  
           <h3><a class="session-title" style="color: black;"> <strong>{{ .Title }}</strong></a></h3>          
@@ -81,8 +84,9 @@
               <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
       </div>
        </div>
-       {{ end }}
-       {{ end }}
+      
+     {{ end }}
+
 
     </div>
     </div>
