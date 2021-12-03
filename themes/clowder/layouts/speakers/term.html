@@ -41,7 +41,7 @@
                       <!-- Sessions speaker -->
                       <ul>
                         {{ range (.Data.Pages.ByParam "time_start").Reverse }}
-                          <li><a href="{{ .Permalink }}">{{ .Title }}</a>{{ with .Params.date | time }} ({{ .Format "2006" }}){{ end }}</li>
+                          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.date | time }} ({{ .Format "2006" }}){{ end }}</li>
                         {{ end }}
                         </ul>
                       <!-- Sessions speaker end -->

@@ -16,7 +16,7 @@
             <h1 class="title-talk">{{ .Title }}</h1>
             <div class="row">
               {{ range (.GetTerms "projects") }}
-              <a href="{{.Permalink}}"> 
+              <a href="{{ .RelPermalink }}"> 
                 <h2>&nbsp;&nbsp;{{ .Title }} Meetup</h2>
               </a>
               {{ end }}
@@ -28,7 +28,7 @@
             <div class="d-lg-none d-xl-none">
               By 
               {{ range (.GetTerms "speakers") }}
-              <a class="speaker-inline-item" href="{{ .Permalink }}">{{ .Title }}</a>
+              <a class="speaker-inline-item" href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{ end }}  
             </div>
             
