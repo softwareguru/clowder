@@ -12,12 +12,12 @@
       <div class="speaker-item">
         <div class="speaker-block">
           <div class="headshot-box">
-            <a href="{{.Permalink}}">
+            <a href="{{ .RelPermalink }}">
               <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" class="img-fluid rounded-circle shadow">
             </a>
           </div>
           <div class="speaker text-center">
-            <h4 class="mb-0 mt-3"><a href="{{.Permalink | relURL }}">{{ .Title }}</a></h4>
+            <h4 class="mb-0 mt-3"><a href="{{.RelPermalink | relURL }}">{{ .Title }}</a></h4>
             <p>{{ .Params.Designation}}</p>
           </div>
         </div>
