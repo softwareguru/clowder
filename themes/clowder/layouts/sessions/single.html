@@ -58,7 +58,7 @@
             <div class="speaker-info" style="margin-bottom: 20px;">
                 {{ range (.GetTerms "speakers") }}
               <figure class="thumb">
-                <a href="{{ .Permalink }}">
+                <a href="{{ .RelPermalink }}">
                   <img class="rounded-circle" width="150" src="{{ .Params.image | relURL}}" alt="">
                   <h5 class="name" style="color: #17A8BC;">{{ .Title }}</h5>
                 </a>

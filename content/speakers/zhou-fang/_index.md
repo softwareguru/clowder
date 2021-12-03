@@ -1,7 +1,7 @@
 ---
 title: "Zhou Fang"
 date: 2021-12-01T15:15:42-06:00
-image : "/images/speaker.jpg"
+image : "/images/speakers/zhou-fang.png"
 designation : "Software Engineer in the Dataproc Metastore team"
 country: ""
 facebook: ""

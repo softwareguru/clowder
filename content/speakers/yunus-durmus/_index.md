@@ -1,13 +1,13 @@
 ---
 title: "Yunus Durmus"
 date: 2021-12-01T15:18:00-06:00
-image : "/images/speaker.jpg"
-designation : "Cloud Engineer at the Professional Service Organization of Google Cloud"
+image : "/images/speakers/yunus-durmus.png"
+designation : "Software Engineer"
 country: ""
 facebook: ""
 instagram: ""
-twitter: ""
-linkedin: ""
+twitter: "https://twitter.com/ningkang0957"
+linkedin: "https://www.linkedin.com/in/kevingg/"
 github: ""
 ---
 
