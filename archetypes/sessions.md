@@ -4,12 +4,12 @@ title:
 url: 
 speakers:
  - 
-time_start: 
-time_end:   
-block: {{ substr .Name 0 1 }}
-slot: {{ substr .Name 1 1 }}
-format: {{ substr .Name 2 1 }}
-language: 
-tags:
+date: {{ .Date }}
+start_date: 2021-11-16T16:00:00Z
+link:  
+video: 
+projects: 
+- 
+draft: false
 ---
 

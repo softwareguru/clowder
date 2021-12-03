@@ -14,7 +14,7 @@
         {{ range (.GetTerms "projects") }}
         <a href="{{.Permalink}}">
         <img src="{{ .Params.Image | relURL }}" alt="" >
-        </a>
+      </a>
         {{ end }}
 
       <div class="session-info">
@@ -49,6 +49,8 @@
           TALKS</h2>
       </div>
 
+      
+
       <div class="col col-lg-8 colores">
         
         {{ range .Params.sessions }}
@@ -78,7 +80,7 @@
           </div>
           
           <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;"> {{ .Summary}}
-              <div><a href="{{.Permalink}}" style="color: black;">See more...</a></div>
+              <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
       </div>
        </div>
        {{ end }}
