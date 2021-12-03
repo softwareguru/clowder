@@ -12,7 +12,7 @@
       <div class="session-item">
    
         {{ range (.GetTerms "projects") }}
-        <a href="{{.Permalink}}">
+        <a href="{{ .RelPermalink }}">
         <img src="{{ .Params.Image | relURL }}" alt="" >
       </a>
         {{ end }}
