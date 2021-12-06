@@ -7,7 +7,14 @@
         {{ .Content }}
     </p>
 
-    <div class="schedule-block" style="margin-top: 50px;">
+    <div class="schedule-block" style="margin-top: 40px;">
+
+
+  <h1 class="project-top-title"><strong>PROJECT</strong>&nbsp;<img src="/images/icons/Project.png" width="70"></h1>
+  
+
+     
+
       <div class="row">
         <div class="col col-lg-3">
       <div class="session-item">
@@ -17,6 +24,7 @@
       </div>
       </div>
       <div class="col col-lg-7">
+
     <div class="session-info title-talks border-title">
      
       <div class="row">
@@ -84,7 +92,7 @@
       <div class="col-md-5">
      
         <h2 class="upcoming-event-title"> 
-          <img src="/images/icons/Upcoming-events.png" alt="" width="90">UPCOMING EVENTS</h2>
+          <img src="/images/icons/Upcoming-events.png"  width="90">UPCOMING EVENTS</h2>
       </div>
 
     
@@ -126,7 +134,7 @@
           <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
       </div>
       <div class="col col-lg-6 colores">
-        {{ range sort (where .Data.Pages "Section" "events")}}
+        {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date"}}
         {{ $start_date := .Params.start_date | time }}
         {{ if lt $start_date now }}
 

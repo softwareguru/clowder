@@ -1,5 +1,11 @@
 //Details projects
 
+.project-top-title{
+    color: $primary-color;
+    font-size: 3.8em;
+    margin-bottom: 25px;
+}
+
 .upcoming-event-title{
     color: $primary-color;
     background-color: #F1F2F2;
@@ -8,13 +14,11 @@
     margin-left: -5%;
     margin-right: -7%;
     border-radius: 30px 0px 0px 30px;
-    
 }
 
 .project-item{
     padding: 20px 30px 10px 30px;
     border-radius: 0px 30px 30px 0px;
-    
 }
 
 //Dinamic colors 

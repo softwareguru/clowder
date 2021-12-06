@@ -9,14 +9,17 @@
             <th data-field="project">Project</th>
             <th data-field="title">Title</th>
             <th data-field="speaker">Speaker(s)</th>
-            <th data-field="Date">Date</th>
+            <th data-field="recording">Recording</th>
+            <th data-field="date">Date</th>
           </tr>
         </thead>
         <tbody> 
         
-          {{ range sort (where $.Site.RegularPages "Section" "events").Reverse}}
+          {{ range sort (where .Site.RegularPages "Section" "events") ".Params.start_date"}}
           {{ $start_date := .Params.start_date | time }}
           {{ if le $start_date now }}
+ 
+         
 
     <tr>
         {{ range (.GetTerms "projects") }}
@@ -27,13 +30,16 @@
         {{ range .Params.sessions }}
         {{ with $.Site.GetPage . }}
         <td><a href="{{ .RelPermalink }}">{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</a></td>
+       
+        <td class="text-center">{{ with .Params.video }}<a href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i class="fa fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>
+
         {{ end }}
         {{ end }}
-        
         <td>{{ $start_date.Format "January 2, 2006" }}</td>
     </tr>
     {{ end }}
     {{ end }}
+
     </tbody>
     </table>
 
