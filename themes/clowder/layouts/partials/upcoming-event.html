@@ -19,7 +19,7 @@
       {{ if ge $start_date now }}
 
       <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
-        <h3><a class="session-title" style="color: black;"> <strong>{{ $start_date.Format "2 January at 3:04pm" }}</strong></a></h3>
+        <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ $start_date.Format "2 January at 3:04pm" }}</strong></a></h3>
         
 
         <div class="row">

@@ -12,8 +12,11 @@
             <th data-field="Date">Date</th>
           </tr>
         </thead>
-        <tbody>
-            {{ range sort (where $.Site.RegularPages "Section" "events")}}
+        <tbody> 
+        
+          {{ range sort (where $.Site.RegularPages "Section" "events")}}
+          {{ $start_date := .Params.start_date | time }}
+          {{ if le $start_date now }}
 
     <tr>
         {{ range (.GetTerms "projects") }}
@@ -21,8 +24,9 @@
         {{ end }}
         <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
         <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
-        <td>{{ .Date.Format "January 2, 2006" }}</td>
+        <td>{{ $start_date.Format "January 2, 2006" }}</td>
     </tr>
+    {{ end }}
     {{ end }}
     </tbody>
     </table>
