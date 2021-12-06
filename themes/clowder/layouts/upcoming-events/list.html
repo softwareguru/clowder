@@ -14,20 +14,25 @@
         </thead>
         <tbody> 
         
-          {{ range sort (where $.Site.RegularPages "Section" "events").Reverse}}
+          {{ range sort (where $.Site.RegularPages "Section" "events") }}
           {{ $start_date := .Params.start_date | time }}
           {{ if ge $start_date now }}
 
     <tr>
         {{ range (.GetTerms "projects") }}
-        <td><a class="session-title" href="{{ .Permalink }}">{{ .Params.title }}</a></td>
+        <td><a class="session-title" href="{{ .RelPermalink }}">{{ .Params.title }}</a></td>
         {{ end }}
-        <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
-        <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
+        <td><a class="session-title" href="{{ .RelPermalink }}">{{ .Params.title }}</a></td>
+        {{ range .Params.sessions }}
+        {{ with $.Site.GetPage . }}
+        <td><a href="{{ .RelPermalink }}">{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</a></td>
+        {{ end }}
+        {{ end }}
         <td>{{ $start_date.Format "January 2, 2006" }}</td>
     </tr>
     {{ end }}
     {{ end }}
+
     </tbody>
     </table>
 
