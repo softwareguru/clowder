@@ -23,7 +23,7 @@
                 <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
             </div>
             <div class="col col-lg-7 colores">
-              {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" | first 5}}
+              {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" "desc" | first 7}}
               {{ $start_date := .Params.start_date | time }}
               {{ if lt $start_date now }}
 
