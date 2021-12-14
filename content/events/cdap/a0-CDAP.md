@@ -9,6 +9,7 @@ projects:
  - cdap
 sessions: 
  - c1.md
+ - c2.md
 ---
 
 
