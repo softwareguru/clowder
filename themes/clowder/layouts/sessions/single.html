@@ -31,22 +31,33 @@
               <a class="speaker-inline-item" href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{ end }}  
             </div>
-            
-            
+            <br>
 
-            <div class="talk content mt-4">{{ .Content }}</div>
-          
-           </div>
-          <br>
-          <br>
-          
-           {{ with .Params.slides }}
+            {{ with .Params.slides }}
 
           <div class="">
             <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download slides</span></a>
           </div>
           <br>
           {{ end }}
+
+          <div class="talk content mt-4">{{ .Content }}</div>
+          
+           </div>
+
+           
+          <br>
+          <br>
+          
+          {{ with .Params.github_resources }}
+
+          <div class="">
+            <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title"><span class="fab fa-github"></span></i>&nbsp;Github Resources</span></a>
+          </div>
+          <br>
+          {{ end }}
+           
+          
         </div>
         
         
