@@ -1,10 +1,11 @@
 ############################# banner ################################
 banner:
   enable : true
-  title : "About Clowder"
+  title : "Welcome to Clowder Space!"
   logo : "/images/logo.svg"
   bg_image: "images/Clowder_home.jpg"
-  date_time : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit, aliquam, tenetur aut deleniti nisi illo odio magnam libero iusto, ipsam sit eaque repellendus rem quaerat provident fugiat exercitationem eius? Vero laboriosam iure tenetur deleniti inventore consequatur illo itaque nemo?"
+  date_time : "
+    You will find Open Source project's events and talks related to Data Analytics and Cloud Native. Take a look to the previous recordings and register to watch the upcoming events."
   venue : ""
   button1:
     enable : false

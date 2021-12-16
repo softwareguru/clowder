@@ -125,7 +125,7 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
 
 #################### default parameters ################################
 [params]
-logo = "/images/Clowder-Logo.png"
+logo = "/images/Clowder-Space-Logo.png"
 home = "Home"
 
 # Meta data
