@@ -117,10 +117,10 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
   URL = "/host-meetup"
   weight = 3
 
-  [[menu.main]]
-  name = "ABOUT"
-  URL = "/about"
-  weight = 4
+  #[[menu.main]]
+  #name = "ABOUT"
+  #URL = "/about"
+  #weight = 4
 
 
 #################### default parameters ################################
@@ -171,23 +171,23 @@ link = "#"
 
 [[params.footer_about]]
 name = "Know us"
-link = "#"
+link = "/about"
 
 [[params.footer_about]]
 name = "Contact us"
-link = "#"
+link = "mailto:info@clowder.space"
 
-[[params.footer_resources]]
-name = "Organizers"
-link = "#"
+#[[params.footer_resources]]
+#name = "Organizers"
+#link = "#"
 
-[[params.footer_resources]]
-name = "Code of Conduct"
-link = "#"
+#[[params.footer_resources]]
+#name = "Code of Conduct"
+#link = "#"
 
-[[params.footer_resources]]
-name = "Privacy policy"
-link = "#"
+#[[params.footer_resources]]
+#name = "Privacy policy"
+#link = "#"
 
 #[[params.footer_resources]]
 #name = "Call for papers"

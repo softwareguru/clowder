@@ -4,8 +4,7 @@ banner:
   title : "Welcome to Clowder Space!"
   logo : "/images/logo.svg"
   bg_image: "images/Clowder_home.jpg"
-  date_time : "
-    You will find Open Source project's events and talks related to Data Analytics and Cloud Native. Take a look to the previous recordings and register to watch the upcoming events."
+  date_time : "You will find Open Source project's events and talks related to Data Analytics and Cloud Native. Take a look to the previous recordings and add the upcoming events to your calendar."
   venue : ""
   button1:
     enable : false

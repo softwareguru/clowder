@@ -11,7 +11,7 @@ slides: "#"
 video: https://youtu.be/xsZVbYOrij4
 github_resources: "#"
 projects: 
- - airflow
+ - Apache Airflow
 draft: false
 
 ---

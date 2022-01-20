@@ -57,6 +57,12 @@
 {{ end }}
 <!-- /cta_cfp -->
 
+<!-- upcoming-event in partial -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "previous-events.html" . }}
+{{ end }}
+<!-- /upcoming-event -->
+
 
 <!-- schedule -->
 {{ if $data.homepage.schedule.enable }}

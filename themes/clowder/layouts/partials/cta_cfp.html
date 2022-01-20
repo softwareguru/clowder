@@ -11,63 +11,7 @@
     </section>
     <!-- End Call to action -->
 
-
-<!-- Previous events at home-->
     <br><br>
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-5">
-              <h2 class="upcoming-event-title"> 
-                <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
-            </div>
-            <div class="col col-lg-7 colores">
-              {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" "desc" | first 7}}
-              {{ $start_date := .Params.start_date | time }}
-              {{ if lt $start_date now }}
-
-              <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
-                <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ $start_date.Format "2 January 2006" }}</strong></a></h3>
-                
-      
-                <div class="row">
-                  
-                  <div class="col col-lg-10">
-         
-                    <h5 style="color:black;" ><strong>Project: {{ .Params.projects }}</strong></h5>
-                    
-                <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
-                </p>
-
-                
-           
-                  </div>
-                  <!--<div class="col col-lg-2">
-                    <center>
-                        
-                      <div class="recording">
-                        <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
-                      </div>
-                      
-                    
-                </center>
-                  </div>-->
-                </div>
-                          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
-                    <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-            </div>
-             </div>
-
-             {{ end }}
-             {{ end }}
-        
-
-             
-            </div>
-          </div>
-    </div>
-    <br>
 
 
     
