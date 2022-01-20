@@ -19,8 +19,8 @@
       {{ $start_date := .Params.start_date | time }}
       {{ if ge $start_date now }}
 
-      <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
-        <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ $start_date.Format "2 January at 3:04pm" }}</strong></a></h3>
+      <div class="project-item"><a href="{{ .RelPermalink }}">
+        <h3 style="color: black;"><strong>{{ $start_date.Format "2 January at 3:04pm" }}</strong></h3>
         
 
         <div class="row">
@@ -48,7 +48,7 @@
         </div>
                   <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
             <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-    </div>
+    </div></a>
      </div>
 
      {{ end }}

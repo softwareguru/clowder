@@ -53,13 +53,13 @@
       <div class="social-links row">
         {{ with .Params.website }}
         {{ if ne . "" }}
-        <div class="social-item col"><a href="#"><i class="fa fa-2x fa-globe"></i></a></div>
+        <div class="social-item col"><a href="{{ . }}"><i class="fa fa-2x fa-globe"></i></a></div>
         {{ end }}
         {{ end }}
 
         {{ with .Params.twitter }}
         {{ if ne . "" }}
-        <div class="social-item-1 col"><a href="#"><i class="fa fa-2x fa-twitter"></i></a></div>
+        <div class="social-item-1 col"><a href="{{ . }}"><i class="fa fa-2x fa-twitter"></i></a></div>
         {{ end }}
         {{ end }}
 
@@ -67,13 +67,13 @@
 
         {{ with .Params.slack }}
         {{ if ne . "" }}
-        <div class="social-item-2 col"><a href="#"><i class="fa fa-2x fa-slack"></i></a></div>
+        <div class="social-item-2 col"><a href="{{ . }}"><i class="fa fa-2x fa-slack"></i></a></div>
         {{ end }}
         {{ end }}
 
         {{ with .Params.youtube }}
         {{ if ne . "" }}
-        <div class="social-item-3 col"><a href="#"><i class="fa fa-2x fa-youtube"></i></a></div>
+        <div class="social-item-3 col"><a href="{{ . }}"><i class="fa fa-2x fa-youtube"></i></a></div>
         {{ end }}
         {{ end }}
 
@@ -103,16 +103,16 @@
         {{ if ge $start_date now }}
 
  
-        <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
+        <div class="project-item"><a href="{{ .RelPermalink }}">
         
-          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"><strong>
+          <h3 style="color: black;"><strong>
             {{ $start_date.Format "2 January at 3:04pm" }} 
-          </strong></a></h3>
+          </strong></h3>
           
           <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}</p>
           <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
               <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-      </div>
+      </div></a>
        </div>
  
       
@@ -138,8 +138,8 @@
         {{ $start_date := .Params.start_date | time }}
         {{ if lt $start_date now }}
 
-        <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
-          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ $start_date.Format "2 January 2006" }}</strong></a></h3>
+        <div class="project-item"><a href="{{ .RelPermalink }}">
+          <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>
           
 
           <div class="row">
@@ -162,7 +162,7 @@
           </div>
                     <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
               <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-      </div>
+      </div></a>
        </div>
         {{ end }}
         {{ end }}
