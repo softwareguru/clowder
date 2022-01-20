@@ -7,5 +7,5 @@ website: "#"
 twitter: "#"
 slack: "#"
 youtube: "#"
-
+proposal_link: https://forms.gle/dBAqR5HzjG2H3XgD7
 ---

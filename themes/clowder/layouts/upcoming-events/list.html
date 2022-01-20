@@ -22,12 +22,19 @@
         {{ range (.GetTerms "projects") }}
         <td><a class="session-title" href="{{ .RelPermalink }}">{{ .Params.title }}</a></td>
         {{ end }}
+
         <td><a class="session-title" href="{{ .RelPermalink }}">{{ .Params.title }}</a></td>
+
         {{ range .Params.sessions }}
         {{ with $.Site.GetPage . }}
-        <td><a href="{{ .RelPermalink }}">{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</a></td>
+        <td ><a href="{{ .RelPermalink }}">
+          {{ with .Params.speakers }}
+          {{ delimit . ", " " & " }}
+          {{ end }}
+        </a></td>
+        {{ end }} 
         {{ end }}
-        {{ end }}
+
         <td>{{ $start_date.Format "January 2, 2006" }}</td>
     </tr>
     {{ end }}

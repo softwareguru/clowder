@@ -90,10 +90,11 @@
 
     </div>
     <br>
-
+    {{ with .Params.proposal_link }}
     <div class="register-button" style="margin-left: 286px;">
-        <a href="#" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Become the next meetup speaker...</span></a>
+        <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Become the next meetup speaker...</span></a>
     </div>
+    {{ end }}
  <br>
     
       <div class="row">

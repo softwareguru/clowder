@@ -7,6 +7,7 @@ website: "#"
 twitter: "#"
 slack: "#"
 youtube: "#"
+proposal_link: https://forms.gle/JH6VhyQ3SiJ23vMUA
 draft: false
 ---
 
