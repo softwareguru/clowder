@@ -8,6 +8,7 @@ link:
 projects: Data Lake Management
 sessions: 
  - d1.md
+type_event: Online
 draft: false 
 ---
 

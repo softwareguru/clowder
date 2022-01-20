@@ -12,9 +12,6 @@
 
   <h1 class="project-top-title"><strong>PROJECT</strong>&nbsp;<img src="/images/icons/Project.png" width="70"></h1>
   
-
-     
-
       <div class="row">
         <div class="col col-lg-3">
       <div class="session-item">
@@ -32,21 +29,25 @@
         <div class="details-project col col-lg-7">
             <h1><strong>{{ .Title }}</strong></h1>
             <br>
-              <p>{{ .Params.Description }}</p>
-              
+            <p>{{ .Params.Description }}</p>
+            <br>
+            <div class="speaker" >
+              <br>
+            </div>
         </div>
+
         <div class="col col-lg-5">
       <center>
         <h2 class="links">LINKS</h2>
       </center>
-        </div>
-      
-                  
+        </div>     
     </div>
     
 </div>
 </div>
-<div class="col col-lg-2">
+
+<!-- Networks for each project-->
+   <div class="col col-lg-2">
   <div class="session-info title-talks">
     <div class="container">
      <center>
@@ -82,16 +83,26 @@
      </div>
 
 </div>
-</div>
-    
+   </div>
+<!-- Networks for each project-->
+
+
+
     </div>
+    <br>
+
+    <div class="register-button" style="margin-left: 286px;">
+        <a href="#" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Become the next meetup speaker...</span></a>
+    </div>
+ <br>
     
       <div class="row">
       <div class="col">
+        
       </div>
       <div class="col-md-5">
      
-        <h2 class="upcoming-event-title"> 
+        <h2 class="upcoming-event-title-projects"> 
           <img src="/images/icons/Upcoming-events.png"  width="90">UPCOMING EVENTS</h2>
       </div>
 
@@ -106,7 +117,7 @@
         <div class="project-item"><a href="{{ .RelPermalink }}">
         
           <h3 style="color: black;"><strong>
-            {{ $start_date.Format "2 January at 3:04pm" }} 
+            {{ $start_date.Format "2 January at 3:04pm" }} (<em>{{ .Params.Type_event }}</em>)
           </strong></h3>
           
           <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}</p>
@@ -130,7 +141,7 @@
       </div>
       <div class="col-md-5">
      
-        <h2 class="upcoming-event-title"> 
+        <h2 class="upcoming-event-title-projects"> 
           <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
       </div>
       <div class="col col-lg-6 colores">
