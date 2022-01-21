@@ -11,8 +11,8 @@
       </a>
     </div>
     <div class="col col-lg-7 colores">
-      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous")
-      ".Params.start_date" "desc" | first 10}}
+      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous" | first 3)
+      ".Params.start_date" "desc"}}
       {{ $start_date := .Params.start_date | time }}
 
       <div class="project-item"><a href="{{ .RelPermalink }}">

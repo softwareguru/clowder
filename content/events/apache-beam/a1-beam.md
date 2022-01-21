@@ -9,6 +9,7 @@ projects: Apache Beam
 sessions: 
  - b2.md
 type_event: Online
+status: previous
 ---
 
 

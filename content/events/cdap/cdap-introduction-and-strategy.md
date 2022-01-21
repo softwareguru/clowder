@@ -11,6 +11,7 @@ sessions:
  - cdap-what-is-coming-for-2021-and-beyond
  - cdap-feature-speaker-liveramp
 type_event: Online
+status: previous
 draft: false
 ---
 

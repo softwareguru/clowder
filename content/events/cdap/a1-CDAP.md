@@ -9,6 +9,7 @@ projects: CDAP
 sessions:
  - cdap-220218
 type_event: Online
+status: upcoming
 draft: false
 ---
 

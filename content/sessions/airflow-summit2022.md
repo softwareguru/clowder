@@ -13,4 +13,6 @@ projects:
 draft: false
 ---
 
+Program to be announced. For registering visit: https://airflowsummit.org/ 
+
 Become an Airflow Summit speaker, send your proposal: https://sessionize.com/airflow-summit-2022/

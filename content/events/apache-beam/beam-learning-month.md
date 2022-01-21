@@ -11,6 +11,7 @@ sessions:
  - beam-windows-from-open-to-close
  - beam-using-java-transforms-in-a-multi-language-python-pipeline
 type_event: Online
+status: previous
 draft: false
 ---
 

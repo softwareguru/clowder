@@ -12,4 +12,8 @@ projects: Apache Beam
 draft: false
 ---
 
-CFP pending to be announced
+Program to be announced. For registering visit: https://2022.beamsummit.org/ 
+
+
+Become an Beam Summit speaker, send your proposal: 
+https://sessionize.com/beam-summit-2022

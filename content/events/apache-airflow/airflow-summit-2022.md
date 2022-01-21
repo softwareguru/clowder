@@ -4,7 +4,7 @@ title: "Airflow Summit 2022"
 description: 
 date: 2022-01-20T12:15:06-06:00
 start_date: 2022-05-23T10:00:00Z
-link: "https://airflowsummit.org/" 
+link: "https://bit.ly/3ryQPtm" 
 projects: Apache Airflow
 sessions:
  - airflow-summit2022

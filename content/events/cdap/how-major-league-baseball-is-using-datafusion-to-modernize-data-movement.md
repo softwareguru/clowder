@@ -7,7 +7,9 @@ start_date: 2021-03-03T10:00:00Z
 link: "" 
 projects: CDAP
 sessions:
- -
+ - cdap-how-major-league-baseball
+type_event: Online
+status: previous
 draft: false
 ---
 

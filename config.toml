@@ -155,19 +155,19 @@ preloader = "" # use jpg, png, svg or gif format.
 ############################# social icon ############################
 [[params.social]]
 icon = "tf-ion-social-twitter"
-link = "#"
+link = "https://twitter.com/ClowderSpace"
 
-[[params.social]]
-icon = "tf-ion-social-youtube"
-link = "#"
+#[[params.social]]
+#icon = "tf-ion-social-youtube"
+#link = "#"
 
-[[params.social]]
-icon = "fab fa-slack"
-link = "#"
+#[[params.social]]
+#icon = "fab fa-slack"
+#link = "#"
 
 [[params.social]]
 icon = "tf-ion-android-mail"
-link = "#"
+link = "mailto:info@clowder.space"
 
 [[params.footer_about]]
 name = "Know us"

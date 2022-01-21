@@ -8,7 +8,8 @@ link: "https://2022.beamsummit.org/"
 projects: Apache Beam
 sessions:
  - beam-summit2022
-type_event: Hybrid Event
+type_event: hybrid
+status: upcoming
 draft: false
 ---
 
