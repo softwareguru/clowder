@@ -9,6 +9,7 @@ projects: cdap
 sessions: 
  - c2
 type_event: Online
+status: previous
 ---
 
 

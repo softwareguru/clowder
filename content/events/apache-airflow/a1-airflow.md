@@ -9,6 +9,7 @@ projects: Apache Airflow
 sessions: 
  - a1.md
 type_event: Online
+status: previous
 ---
 
 

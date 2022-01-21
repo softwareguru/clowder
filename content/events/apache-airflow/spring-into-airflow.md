@@ -11,6 +11,7 @@ sessions:
  - automating-ideas-with-airflow
 type_event: Online
 draft: false
+status: previous
 ---
 
 

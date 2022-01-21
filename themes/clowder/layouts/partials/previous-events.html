@@ -1,58 +1,48 @@
-
 <!-- Previous events at home-->
 
 <div class="container">
-    <div class="row">
+  <div class="row">
 
-        <div class="col-md-5">
-          <a href="/previous-events/">
-            <h2 class="upcoming-event-title"> 
-              <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
-          </a>
-        </div>
-        <div class="col col-lg-7 colores">
-          {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" "desc" | first 10}}
-          {{ $start_date := .Params.start_date | time }}
-          {{ if lt $start_date now }}
+    <div class="col-md-5">
+      <a href="/previous-events/">
+        <h2 class="upcoming-event-title">
+          <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS
+        </h2>
+      </a>
+    </div>
+    <div class="col col-lg-7 colores">
+      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous")
+      ".Params.start_date" "desc" | first 10}}
+      {{ $start_date := .Params.start_date | time }}
 
-          <div class="project-item"><a href="{{ .RelPermalink }}">
-            <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>
-            
-  
-            <div class="row">
-              
-              <div class="col col-lg-10">
-     
-                <h5 style="color:black;" ><strong>Project: {{ .Params.projects }}</strong></h5>
-                
-            <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
-            </p>
+      <div class="project-item"><a href="{{ .RelPermalink }}">
+          <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>
 
-            
-       
-              </div>
-              <!--<div class="col col-lg-2">
-                <center>
-                    
-                  <div class="recording">
-                    <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
-                  </div>
-                  
-                
-            </center>
-              </div>-->
+
+          <div class="row">
+
+            <div class="col col-lg-10">
+
+              <h5 style="color:black;"><strong>Project: {{ .Params.projects }}</strong></h5>
+
+              <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
+              </p>
+
+
+
             </div>
-                      <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
-                <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-        </div></a>
-         </div>
-
-         {{ end }}
-         {{ end }}
-    
-
-         
-        </div>
+          </div>
+          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
+            <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
+          </div>
+        </a>
       </div>
+
+      {{ end }}
+
+
+
+    </div>
+  </div>
 </div>
 <br>
