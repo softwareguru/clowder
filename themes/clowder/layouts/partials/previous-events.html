@@ -11,7 +11,7 @@
           </a>
         </div>
         <div class="col col-lg-7 colores">
-          {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" "desc" | first 8}}
+          {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" "desc" | first 10}}
           {{ $start_date := .Params.start_date | time }}
           {{ if lt $start_date now }}
 
