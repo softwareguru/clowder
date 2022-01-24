@@ -12,7 +12,7 @@ video: https://youtu.be/xsZVbYOrij4
 github_resources: "#"
 projects: 
  - Apache Airflow
-draft: false
+draft: true
 
 ---
 
