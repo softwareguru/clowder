@@ -16,7 +16,7 @@
         <div class="col col-lg-3">
       <div class="session-item">
      
-        <img src="{{ .Params.Image | relURL }}" alt="" >
+        <img class="project-img" src="{{ .Params.Image | relURL }}" alt="" >
 
       </div>
       </div>
@@ -27,7 +27,7 @@
       <div class="row">
                   
         <div class="details-project col col-lg-7">
-            <h1><strong>{{ .Title }}</strong></h1>
+            <h1 class="project-title"><strong>{{ .Title }}</strong></h1>
             <br>
             <p>{{ .Params.Description }}</p>
             <br>
@@ -91,7 +91,7 @@
     </div>
     <br>
     {{ with .Params.proposal_link }}
-    <div class="register-button" style="margin-left: 286px;">
+    <div class="register-button">
         <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Become the next meetup speaker...</span></a>
     </div>
     {{ end }}
