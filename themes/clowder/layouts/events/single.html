@@ -3,94 +3,105 @@
 {{ partial "page-title.html" . }}
 
 <div class="container mb-4">
-    <p class="text-center">
-        {{ .Content }}
-    </p>
+  <p class="text-center">
+    {{ .Content }}
+  </p>
 
-    <div class="schedule-block" style="margin-top: 50px;">
-      
-      <div class="session-item">
-   
-        {{ range (.GetTerms "projects") }}
-        <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.Image | relURL }}" alt="" >
+  <div class="schedule-block" style="margin-top: 50px;">
+
+    <div class="session-item">
+
+      {{ range (.GetTerms "projects") }}
+      <a href="{{ .RelPermalink }}">
+        <img src="{{ .Params.Image | relURL }}" alt="">
       </a>
-        {{ end }}
+      {{ end }}
 
       <div class="session-info">
-      
-      <h2 class="title-talk border-title">{{ .Title }}</h2>
-      <div class="details-talk col-sm-3">
 
-        {{ $start_date := .Params.start_date | time }}
-      
-        <h3> <strong>{{ $start_date.Format "2 Jan" }}
-        </strong></h3>
-        <p>{{ $start_date.Format "3:04pm" }}</p>
+        <h2 class="title-talk border-title">{{ .Title }}</h2>
+        <div class="details-talk col-sm-3">
+
+          {{ $start_date := .Params.start_date | time }}
+
+          <h3> <strong>{{ $start_date.Format "2 Jan" }}
+            </strong></h3>
+          <p>{{ $start_date.Format "3:04pm" }}</p>
+        </div>
+        {{ with .Params.cta}}
+         <div class="register-button">
+          {{ if eq .type "typeform" }}
+          <a href="#" data-tf-popup="{{ .formid }}" data-tf-size="70" class="theme-btn btn-style-two"><span class="btn-title">{{ .text }}</span></a>
+          <script src="//embed.typeform.com/next/embed.js"></script>
+          {{ end }}
+          {{ if eq .type "external" }}
+          <a href="{{ .url }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">{{ .text }}</span></a>
+          {{ end }}
+        </div>
+
+        {{ end }}
+
       </div>
-      {{ with .Params.link}}
-      <br>
-      <div class="register-button">
-        <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Register and add to my calendar</span></a>
-    </div>
-    {{ end }}
-    </div>
 
     </div>
 
-        
+
     <div class="row">
       <div class="col md-1">
-        <img  src="/images/icons/talks-cat.png" alt="" width="70">
+        <img src="/images/icons/talks-cat.png" alt="" width="70">
       </div>
       <div class="col-md-3" style="margin-right: -2%;">
-     
-        <h2 class="upcoming-event-title" style="text-align: center;"> 
+
+        <h2 class="upcoming-event-title" style="text-align: center;">
           TALKS</h2>
       </div>
 
-      
+
 
       <div class="col col-lg-8 colores">
-        
+
         {{ range .Params.sessions }}
-          {{ with $.Site.GetPage . }}
+        {{ with $.Site.GetPage . }}
 
         <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
-   
- 
-          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ .Title }}</strong></a></h3>          
-          
-          <div class="row"> 
-                  
-            <div class="col col-lg-10">
-   
-              {{ with .Params.speakers }}<p class="speakers-list" style="color: black;"><strong>By:</strong> {{ delimit . ", " " & " }}</p>{{ end }}
 
-     
+
+          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ .Title
+                }}</strong></a></h3>
+
+          <div class="row">
+
+            <div class="col col-lg-10">
+
+              {{ with .Params.speakers }}<p class="speakers-list" style="color: black;"><strong>By:</strong> {{ delimit
+                . ", " " & " }}</p>{{ end }}
+
+
             </div>
             <div class="col col-lg-2">
               <center>
-                  
-                <td class="text-center">{{ with .Params.video }}<a href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i class="fa fa-2x fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>
-           
-        
-          </center>
+
+                <td class="text-center">{{ with .Params.video }}<a
+                    href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i
+                      class="fa fa-2x fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>
+
+
+              </center>
             </div>
           </div>
-          
-          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;"> {{ .Summary}}
-              <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-      </div>
-       </div>
-       {{ end }}
-       {{ end }}
 
+          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;"> {{ .Summary}}
+            <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+
+      </div>
     </div>
-    </div>
-   
+
   </div>
-    </div>
+</div>
 </div>
 
 {{ end }}

@@ -73,3 +73,4 @@ public/istiocon-2021
 resources
 *Zone.Identifier
 
+.hugo_build.lock
