@@ -1,11 +1,11 @@
 ---
 id: apache-airflow-220216
-title: TBD
+title: "Happy DAGs + Happier Teammates: How a little CICD can go a long way"
 url: 
 speakers:
- - TBD
+ - Leah Cole
 date: 2022-01-19T17:03:27-06:00
-start_date: 2022-02-16T10:00:00Z
+start_date: 2022-02-16T09:30:00Z
 link:  
 video: 
 projects: 
@@ -13,4 +13,4 @@ projects:
 draft: false
 ---
 
-TBD
+With a small amount of Cloud Build automation and the use of GitHub version control, your Airflow DAGs will always be tested and in sync no matter who is working on them. Leah will walk you through a sample CICD workflow for keeping your Airflow DAGs tested and in sync between environments and teammates. 
