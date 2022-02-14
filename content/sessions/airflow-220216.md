@@ -5,7 +5,7 @@ url:
 speakers:
  - Leah Cole
 date: 2022-01-19T17:03:27-06:00
-start_date: 2022-02-16T09:30:00Z
+start_date: 2022-02-16T17:30:00Z
 link:  
 video: 
 projects: 
