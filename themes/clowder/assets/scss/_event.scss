@@ -4,6 +4,8 @@
     color: $primary-color;
     font-size: 3.8em;
     margin-bottom: 25px;
+    margin-top: -25px;
+    margin-bottom: -15px;
 }
 
 .upcoming-event-title{
@@ -218,24 +220,6 @@
     .border-title{
         padding: 255px 20px 25px 20px;
         margin-left: -50px;
-    }
-
-    .links{
-        position:relative;
-    z-index:0;
-    margin-left: -205px;
-    display: none;
-    
-    }
-
-    .social-links{
-        position:relative;
-        left:-1px;
-        right:-20px; 
-        bottom:14px; 
-        height:120px; 
-        z-index: 0;
-        margin-top: 20px;
     }
     
     .register-button{

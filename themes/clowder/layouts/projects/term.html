@@ -20,10 +20,10 @@
 
       </div>
       </div>
-      <div class="col col-lg-7">
-
+      <div class="col col-lg-7" >
+        <br>
     <div class="session-info title-talks border-title">
-     
+      <br>
       <div class="row">
                   
         <div class="details-project col col-lg-7">
@@ -102,15 +102,17 @@
         
       </div>
       <div class="col-md-5">
-     
+        <a href="/upcoming-events/">
         <h2 class="upcoming-event-title-projects"> 
-          <img src="/images/icons/Upcoming-events.png"  width="90">UPCOMING EVENTS</h2>
+          <img src="/images/icons/Upcoming-events.png"  width="90">UPCOMING EVENTS
+        </h2>
+        </a>
       </div>
 
     
       <div class="col col-lg-6 colores">
      
-        {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "asc"}}
+        {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "asc" }}
         {{ $start_date := .Params.start_date | time }}
         {{ if ge $start_date now }}
 
@@ -141,9 +143,11 @@
       <div class="col">
       </div>
       <div class="col-md-5">
-     
+        <a href="/previous-events/">
         <h2 class="upcoming-event-title-projects"> 
-          <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS</h2>
+          <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS
+        </h2>
+        </a>
       </div>
       <div class="col col-lg-6 colores">
         {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "desc"}}

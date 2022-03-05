@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-5">
+    <div class="col-md-5"> 
       <a href="/previous-events/">
         <h2 class="upcoming-event-title">
           <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS
@@ -11,9 +11,9 @@
       </a>
     </div>
     <div class="col col-lg-7 colores">
-      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous" | first 3)
-      ".Params.start_date" "desc"}}
-      {{ $start_date := .Params.start_date | time }}
+      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous") ".Params.start_date" "desc" | first 3 }}
+        {{ $start_date := .Params.start_date | time }}
+      
 
       <div class="project-item"><a href="{{ .RelPermalink }}">
           <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>

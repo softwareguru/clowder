@@ -9,5 +9,4 @@ slack: ""
 youtube: "https://www.youtube.com/channel/UCLvD9b31s7JtIsXZ9pgjHBQ"
 proposal_link: https://forms.gle/pMCTdoXKMG8gxV9G7
 draft: false
-
 ---
