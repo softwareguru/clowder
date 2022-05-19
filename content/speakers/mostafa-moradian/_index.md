@@ -7,7 +7,7 @@ country: ""
 facebook: ""
 instagram: ""
 twitter: "https://twitter.com/mosimoradian"
-linkedin: ""
+linkedin: "https://www.linkedin.com/in/mostafa-moradian/"
 github: ""
 ---
 
