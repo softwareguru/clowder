@@ -1,9 +1,8 @@
 ---
 id: airflow-summit2022
-title: Program to be announced
-url: 
+title: Airflow Summit 2022
+url: /airflow-summit2022
 speakers:
- - TBD
 date: 2022-01-20T12:16:56-06:00
 start_date: 2022-05-23T10:00:00Z
 link:  
@@ -13,6 +12,4 @@ projects:
 draft: false
 ---
 
-Program to be announced. For registering visit: https://airflowsummit.org/ 
-
-Become an Airflow Summit speaker, send your proposal: https://sessionize.com/airflow-summit-2022/
+Visit: https://airflowsummit.org/ 

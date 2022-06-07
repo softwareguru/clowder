@@ -1,17 +1,16 @@
 ---
 id: istio-con-2022
-title: Program to be announced
-url: 
+title: Istio Con 2022
+url: /istio-con-2022
 speakers:
- - TBD
 date: 2022-04-01T13:20:43-06:00
 start_date: 2022-04-25T17:30:00Z
 link:  
-video: 
+video: https://www.youtube.com/watch?v=kjcA9RvozpY&list=PL7wB27eZmdffL2cyYauEuxcOTyGtSv4gy
 projects: Istio
 draft: false
 ---
 
 
-Program to be announced. For registering visit: https://events.istio.io/istiocon-2022/
+Visit: https://events.istio.io/istiocon-2022/
 

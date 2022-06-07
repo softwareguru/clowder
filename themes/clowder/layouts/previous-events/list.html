@@ -11,7 +11,7 @@
             <!--<th data-field="event">Event</th>-->
             <th data-field="speaker">Speaker(s)</th>
             <th data-field="recording">Recording</th>
-            <th data-field="slides">Slides</th>
+            <!--<th data-field="slides">Slides</th>-->
             <th data-field="date">Date</th>
           </tr>
         </thead>
@@ -62,11 +62,11 @@
           {{ end }}
         </td>
         
-        <td class="text-center">
+        <!--<td class="text-center">
           {{ with .Params.slides }}
           <a href='{{ if hasPrefix . "http" }}{{ . }}{{ else }}/slides/{{ . }}{{ end }}' target="_blank" download><i style="color: black;" class="fa fa-download" aria-hidden="true" title="Slides"></i>
           </a>
-          {{ end }}</td>
+          {{ end }}</td>-->
 
  
 
