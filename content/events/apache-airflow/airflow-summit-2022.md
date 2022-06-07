@@ -13,7 +13,7 @@ sessions:
  - airflow-summit2022
 type_event: Online
 draft: false
-status: upcoming
+status: previous
 ---
 
 
