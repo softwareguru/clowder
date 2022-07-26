@@ -13,7 +13,7 @@ cta:
 sessions:
  - beam-summit2022
 type_event: hybrid
-status: upcoming
+status: previous
 draft: false
 ---
 
