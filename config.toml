@@ -6,7 +6,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 RemovePathAccents = true
 
-googleAnalytics = "G-QB7JLQ9ECY"
+googleAnalytics = "G-GRVWN5Y48L"
 
 publishDir = "public/"
 
