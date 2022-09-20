@@ -62,7 +62,7 @@
 }
 
 .details-project{
-    padding: 20px 0px 0px 30px;
+    padding: 20px 0px 0px 50px;
 }
 
 .links{
@@ -82,7 +82,7 @@
     position:absolute;
     left:-1px;
     right:-20px; 
-    bottom:14px; 
+    bottom: 14px; 
     height:120px; 
     z-index: 0;
 }
@@ -204,6 +204,11 @@
 
 @media (max-width:550px) {
 
+
+    .details-project{
+        padding: 12px 10px 10px 15px;
+    }
+
     .project-top-title{
         font-size: 2.8em;
     }
@@ -214,17 +219,43 @@
     }
 
     .project-title{
+      
         font-size: 2.2em;
+        margin-top: -35px;
+       
+    }
+
+
+
+    
+    .register-button-project{
+        margin-top: 75px;
+    
+    }
+
+    .links{
+        visibility: hidden;
+    }
+
+    .social-links{
+        margin-bottom: -95px;
+       
     }
 
     .border-title{
-        padding: 255px 20px 25px 20px;
-        margin-left: -50px;
+        padding: 25px 20px 25px 20px;
+        margin-left: -20px;
+        margin-right: 40px;
+    
+    }
+
+    .details-talk{
+        padding: 25px 20px 25px 20px;
+        margin-left: -20px;
+        
     }
     
-    .register-button{
-        margin-left: 0px;
-    }
+
 
     
   }

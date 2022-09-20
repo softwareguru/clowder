@@ -29,7 +29,7 @@
         <div class="details-project col col-lg-7">
             <h1 class="project-title"><strong>{{ .Title }}</strong></h1>
             <br>
-            <p>{{ .Params.Description }}</p>
+            <p class="project-description">{{ .Params.Description }}</p>
             <br>
             <div class="speaker" >
               <br>
@@ -91,7 +91,7 @@
     </div>
     <br>
     {{ with .Params.proposal_link }}
-    <div class="register-button">
+    <div class="register-button-project">
         <a href="{{ . }}" target="_blank" class="theme-btn btn-style-two"><span class="btn-title">Become the next meetup speaker...</span></a>
     </div>
     {{ end }}
