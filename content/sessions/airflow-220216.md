@@ -7,7 +7,7 @@ speakers:
 date: 2022-01-19T17:03:27-06:00
 start_date: 2022-02-16T17:30:00Z
 link:  
-video: 
+video: https://youtu.be/MfiEhlDhEI0
 projects: 
 - Apache Airflow
 draft: false
