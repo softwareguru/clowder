@@ -170,6 +170,11 @@ link = "https://twitter.com/ClowderSpace"
 icon = "tf-ion-android-mail"
 link = "mailto:info@clowder.space"
 
+
+[[params.social]]
+icon = "fab fa-instagram"
+link = "https://instagram.com/clowder.space?igshid=MTg0ZDhmNDA="
+
 [[params.footer_about]]
 name = "Know us"
 link = "/about"
