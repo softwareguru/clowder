@@ -183,6 +183,10 @@ link = "/about"
 name = "Contact us"
 link = "mailto:info@clowder.space"
 
+[[params.footer_about]]
+name = "Brochure"
+link = "/files/SG-DevRel-2023.pdf"
+
 #[[params.footer_resources]]
 #name = "Organizers"
 #link = "#"
