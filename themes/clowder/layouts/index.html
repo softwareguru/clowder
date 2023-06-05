@@ -63,6 +63,12 @@
 {{ end }}
 <!-- /previous-event -->
 
+<!-- Carousel -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "carousel.html" . }}
+{{ end }}
+<!-- /Carousel -->
+
 
 <!-- schedule -->
 {{ if $data.homepage.schedule.enable }}
