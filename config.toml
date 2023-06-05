@@ -118,6 +118,11 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
   URL = "/host-meetup"
   weight = 3
 
+  [[menu.main]]
+  name = "BLOG"
+  URL = "/blog"
+  weight = 3
+
   #[[menu.main]]
   #name = "ABOUT"
   #URL = "/about"
