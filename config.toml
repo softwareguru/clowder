@@ -1,6 +1,6 @@
 
 ######################## default configuration ####################
-baseURL = "https://clowder.dev/"
+baseURL = "https://clowder.space/"
 title = "Clowder"
 enableRobotsTXT = true
 DefaultContentLanguage = "en"
