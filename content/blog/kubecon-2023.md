@@ -1,5 +1,5 @@
 ---
-title: "KubeCon Europa 2023: La comunidad IT floreciendo en Amsterdam"
+title: "KubeCon Europe 2023: IT Community blooming in Amsterdam"
 date: 2023-06-05T10:00:00
 draft: false
 url: blog/kubecon-2023/
