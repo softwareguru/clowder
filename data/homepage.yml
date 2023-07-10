@@ -4,7 +4,8 @@ banner:
   title : "Welcome to Clowder Space!"
   logo : "/images/logo.svg"
   bg_image: "images/Clowder_home.jpg"
-  date_time : "Here you will find events and talks from open source communities. Check out upcoming events, register for them and watch recordings of previous talks."
+  subtitle : "Here you will find events and talks from Open Source communities."
+  subtitle2: "Check out upcoming events, register for them and watch recordings of previous talks."
   venue : ""
   button1:
     enable : false
