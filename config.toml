@@ -153,9 +153,10 @@ enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
-#[params.navigation_button]
-#label = "LIVE"
-#link = "/live"
+[params.navigation_button]
+enable = true
+label = "Join our newsletter"
+link = "https://forms.gle/3NcDqKk4g44ig8UUA"
 
 
 ############################# social icon ############################
