@@ -2,7 +2,7 @@
 title: "KubeCon Europe 2023: IT Community blooming in Amsterdam"
 date: 2023-06-05T10:00:00
 draft: false
-url: blog/kubecon-2023/
+slug: kubecon-2023/
 description: ""
 summary: ""
 # post thumb
