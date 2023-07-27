@@ -25,7 +25,7 @@
             <div class="row">
               <div class="col col-lg-10">
                 <h5 style="color:black;"><strong>Project: {{ .Params.projects }}</strong></h5>
-                <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
+                <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title | markdownify }}
                 </p>
               </div>
             </div>
