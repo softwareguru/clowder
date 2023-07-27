@@ -19,7 +19,7 @@
 
       <div class="session-info">
 
-        <h2 class="title-talk border-title">{{ .Title }}</h2>
+        <h2 class="title-talk border-title">{{ .Title | markdownify }}</h2>
         <div class="details-talk col-sm-3">
 
           {{ $start_date := .Params.start_date | time }}

@@ -1,5 +1,5 @@
 ---
-title: "KubeCon Europe 2023: IT Community blooming in Amsterdam"
+title: "KubeCon Europe 2023:<br> IT Community blooming in Amsterdam"
 date: 2023-06-05T10:00:00
 draft: false
 slug: kubecon-2023/
