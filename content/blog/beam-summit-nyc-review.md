@@ -1,5 +1,5 @@
 ---
-title: "Beam Summit 2023: Bringing more sparkle to the shining City of New York"
+title: "Beam Summit 2023:<br> Bringing more sparkle to the shining City of New York"
 date: 2023-06-05T10:00:00
 draft: false
 slug: beam-summit-2023/
