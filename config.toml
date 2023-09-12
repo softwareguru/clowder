@@ -124,8 +124,6 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
   weight = 3
 
 
-
-
 #################### default parameters ################################
 [params]
 logo = "/images/Clowder-Space-Logo.png"
