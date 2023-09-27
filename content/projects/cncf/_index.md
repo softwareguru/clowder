@@ -8,5 +8,5 @@ twitter: "https://twitter.com/CloudNativeFdn"
 slack: ""
 youtube: "https://www.youtube.com/@cncf"
 proposal_link: 
-draft: true
+draft: false
 ---

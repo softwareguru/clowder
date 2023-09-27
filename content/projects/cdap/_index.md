@@ -8,5 +8,5 @@ twitter: "https://twitter.com/cdapio"
 slack: "https://cdap-help.slack.com/"
 youtube: "https://www.youtube.com/c/CDAPio"
 proposal_link: https://forms.gle/XLjzvfdpYdPz4JPY6
-draft: false
+draft: true
 ---
