@@ -37,3 +37,5 @@ Latin America was also present through Clowder Space, Software Guru and many att
 See you soon!
 
 
+<strong><p class="text-right te">Teyza Ponce</p></strong>
+
