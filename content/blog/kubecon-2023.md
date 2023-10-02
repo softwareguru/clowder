@@ -8,7 +8,7 @@ summary: ""
 # post thumb
 images: ["images/blog/kubecon-2023.png"]
 # author
-author: "Clowder Space Team"
+author: "Teyza Ponce"
 
 ---
 
