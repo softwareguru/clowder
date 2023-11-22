@@ -12,7 +12,7 @@ projects: Apache Beam
 sessions: 
  - sessions/beam/beam-college-2023
 type_event: Online
-status: upcoming
+status: previous
 draft: false
 ---
 
