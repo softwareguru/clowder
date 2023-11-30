@@ -50,6 +50,14 @@
 {{ end }}
 <!-- /upcoming-event -->
 
+<!-- Carousel -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "carousel.html" . }}
+{{ end }}
+<!-- /Carousel -->
+
+<br><br>
+
 <!-- cta_cfp in partial -->
 {{ if $data.homepage.cta_cfp.enable }}
 {{ partial "cta_cfp.html" . }}
@@ -61,12 +69,6 @@
 {{ partial "previous-events.html" . }}
 {{ end }}
 <!-- /previous-event -->
-
-<!-- Carousel -->
-{{ if $data.homepage.event_info.enable }}
-{{ partial "carousel.html" . }}
-{{ end }}
-<!-- /Carousel -->
 
 
 <!-- schedule -->
