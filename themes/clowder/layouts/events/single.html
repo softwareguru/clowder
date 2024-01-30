@@ -47,6 +47,11 @@
     </div>
 
 
+    <!-- Talks -->
+    {{ with .Params.cta}}
+    {{ if eq .type "external" }}
+    
+    {{ else }}
     <div class="row">
       <div class="col md-1">
         <img src="/images/icons/talks-cat.png" alt="" width="70">
@@ -99,6 +104,11 @@
 
       </div>
     </div>
+
+    {{ end }}
+    {{ end }}
+
+    <!-- /Talks -->
 
   </div>
 </div>
