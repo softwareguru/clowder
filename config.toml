@@ -168,6 +168,10 @@ link = "https://twitter.com/ClowderSpace"
 #link = "#"
 
 [[params.social]]
+icon = "tf-ion-social-linkedin"
+link = "https://www.linkedin.com/showcase/clowderspace/"
+
+[[params.social]]
 icon = "tf-ion-android-mail"
 link = "mailto:info@clowder.space"
 
