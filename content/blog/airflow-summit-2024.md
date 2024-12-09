@@ -2,7 +2,7 @@
 title: "Airflow Summit 2024: A Successful Celebration of a Decade of Innovation"
 date: 2024-09-22T10:00:00
 # post thumb
-images: ["images/blog/osacon2024.png"]
+images: ["images/blog/airflow2024.jpg"]
 draft: false
 ---
 
