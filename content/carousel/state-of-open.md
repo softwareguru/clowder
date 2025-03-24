@@ -6,4 +6,3 @@ images:
 website: https://stateofopencon.com/
 draft: true
 ---
-
