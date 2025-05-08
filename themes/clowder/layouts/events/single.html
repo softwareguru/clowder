@@ -3,9 +3,6 @@
 {{ partial "page-title.html" . }}
 
 <div class="container mb-4">
-  <p class="text-center">
-    {{ .Content }}
-  </p>
 
   <div class="schedule-block" style="margin-top: 50px;">
 
@@ -29,6 +26,13 @@
           <p>{{ $start_date.Format "3:04pm" }} UTC
            </p>
         </div>
+<br>
+        <p class="text-center">
+          {{ .Content }}
+        </p>
+
+        <br>
+
         {{ with .Params.cta}}
          <div class="register-button-project">
           {{ if eq .type "typeform" }}
@@ -41,6 +45,8 @@
         </div>
 
         {{ end }}
+
+        
 
       </div>
 
