@@ -5,5 +5,5 @@ images:
  - images/carousel/2025/Airflow.png
 website: https://airflowsummit.org/
 weight: 1
-draft: false
+draft: true
 ---
