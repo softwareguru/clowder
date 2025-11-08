@@ -9,13 +9,13 @@
       <tr>
         <th data-field="project">Project</th>
         <th data-field="title">Title</th>
-        <th data-field="speaker">Speaker(s)</th>
+        <!--<th data-field="speaker">Speaker(s)</th>-->
         <th data-field="Date">Date</th>
       </tr>
     </thead>
     <tbody>
 
-      {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date"}}
+      {{ range sort (where $.Site.RegularPages "Section" "sessions") ".Params.start_date" "asc"}}
       {{ $start_date := .Params.start_date | time }}
       {{ if ge $start_date now }}
 
@@ -35,11 +35,11 @@
           {{ end }}
           {{ end }}
         {{ end }}
-        <td>
+        <!--<td>
           {{ with $speakers }}
             {{ delimit . ", " " & " }}
           {{ end }}
-        </td>
+        </td>-->
 
         <td>{{ $start_date.Format "January 2, 2006" }}</td>
       </tr>

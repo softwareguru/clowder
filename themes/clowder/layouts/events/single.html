@@ -3,9 +3,6 @@
 {{ partial "page-title.html" . }}
 
 <div class="container mb-4">
-  <p class="text-center">
-    {{ .Content }}
-  </p>
 
   <div class="schedule-block" style="margin-top: 50px;">
 
@@ -19,7 +16,7 @@
 
       <div class="session-info">
 
-        <h2 class="title-talk border-title">{{ .Title }}</h2>
+        <h2 class="title-talk border-title">{{ .Title | markdownify }}</h2>
         <div class="details-talk col-sm-3">
 
           {{ $start_date := .Params.start_date | time }}
@@ -29,6 +26,13 @@
           <p>{{ $start_date.Format "3:04pm" }} UTC
            </p>
         </div>
+<br>
+        <p class="text-center">
+          {{ .Content }}
+        </p>
+
+        <br>
+
         {{ with .Params.cta}}
          <div class="register-button-project">
           {{ if eq .type "typeform" }}
@@ -42,11 +46,18 @@
 
         {{ end }}
 
+        
+
       </div>
 
     </div>
 
 
+    <!-- Talks -->
+    {{ with .Params.cta}}
+    {{ if eq .type "external" }}
+    
+    {{ else }}
     <div class="row">
       <div class="col md-1">
         <img src="/images/icons/talks-cat.png" alt="" width="70">
@@ -67,8 +78,7 @@
         <div class="project-item" data-toggle="collapse" href="#abs-{{.Params.id}}">
 
 
-          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ .Title
-                }}</strong></a></h3>
+          <h3><a class="session-title" href="{{ .RelPermalink }}" style="color: black;"> <strong>{{ .Title | markdownify }}</strong></a></h3>
 
           <div class="row">
 
@@ -100,6 +110,11 @@
 
       </div>
     </div>
+
+    {{ end }}
+    {{ end }}
+
+    <!-- /Talks -->
 
   </div>
 </div>

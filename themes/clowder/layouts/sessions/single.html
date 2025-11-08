@@ -9,11 +9,11 @@
 <section class="speaker-detail" style="margin-top: -70px;">
   <div class="container">
     <div class="row mt-4">
-     
+      
       <div class="info-column col-lg-9 col-md-12 col-sm-12" style="margin-top: -10px;">
         <div class="inner-column">
           <div class="text-box">
-            <h1 class="title-talk">{{ .Title }}</h1>
+            <h1 class="title-talk">{{ .Title | markdownify }}</h1>
             <div class="row">
               {{ range (.GetTerms "projects") }}
               <a href="{{ .RelPermalink }}"> 
@@ -65,14 +65,22 @@
       <div class="image-column col-lg-3 d-none d-lg-block">
         <div class="schedule-block col-lg-10 col-md-12 col-sm-12">
           <div class="sec-title text-center">
-            <span class="title">Speaker(s):</span>
+            <!--<span class="title">Speaker(s):</span>-->
             <div class="speaker-info" style="margin-bottom: 20px;">
                 {{ range (.GetTerms "speakers") }}
               <figure class="thumb">
+                
                 <a href="{{ .RelPermalink }}">
-                  <img class="rounded-circle" width="150" src="{{ .Params.image | relURL}}" alt="">
-                  <h5 class="name" style="color: #17A8BC;">{{ .Title }}</h5>
+                  {{ with .Params.image }}
+                  <img class="rounded-circle" width="150" src="{{ . | relURL}}" alt="">
+
+                  {{ end }}
+
+                  {{ with .Params.Title }}
+                  <h5 class="name" style="color: #17A8BC;">{{ . }}</h5>
+                  {{ end }}
                 </a>
+            
               </figure>
               {{ end }}      
             </div>

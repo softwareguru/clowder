@@ -1,6 +1,6 @@
 
 ######################## default configuration ####################
-baseURL = "https://clowder.dev/"
+baseURL = "https://clowder.space/"
 title = "Clowder"
 enableRobotsTXT = true
 DefaultContentLanguage = "en"
@@ -116,10 +116,10 @@ link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
   URL = "/host-meetup"
   weight = 3
 
-  #[[menu.main]]
-  #name = "ABOUT"
-  #URL = "/about"
-  #weight = 4
+  [[menu.main]]
+  name = "BLOG"
+  URL = "/blog"
+  weight = 3
 
 
 #################### default parameters ################################
@@ -147,9 +147,10 @@ enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
-#[params.navigation_button]
-#label = "LIVE"
-#link = "/live"
+[params.navigation_button]
+enable = true
+label = "Join our newsletter"
+link = "https://forms.gle/3NcDqKk4g44ig8UUA"
 
 
 ############################# social icon ############################
@@ -166,8 +167,17 @@ link = "https://twitter.com/ClowderSpace"
 #link = "#"
 
 [[params.social]]
+icon = "tf-ion-social-linkedin"
+link = "https://www.linkedin.com/showcase/clowderspace/"
+
+[[params.social]]
 icon = "tf-ion-android-mail"
 link = "mailto:info@clowder.space"
+
+
+[[params.social]]
+icon = "fab fa-instagram"
+link = "https://instagram.com/clowder.space?igshid=MTg0ZDhmNDA="
 
 [[params.footer_about]]
 name = "Know us"
@@ -176,6 +186,10 @@ link = "/about"
 [[params.footer_about]]
 name = "Contact us"
 link = "mailto:info@clowder.space"
+
+[[params.footer_about]]
+name = "Brochure"
+link = "/files/SG-DevRel-2023.pdf"
 
 #[[params.footer_resources]]
 #name = "Organizers"

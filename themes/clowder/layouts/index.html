@@ -12,9 +12,8 @@
         <h1 class="title-home" style="color: white;">
           {{ .title }}
         </h1>
-         {{ with .date_time }}
-          <p>{{ . }}</p>
-        {{ end }} 
+         <p>{{ .subtitle }}</p>
+         <p>{{ .subtitle2 }}</p>
       </div>
   {{ with .venue }}
     <p>{{ . }}</p>
@@ -50,6 +49,14 @@
 {{ partial "upcoming-event.html" . }}
 {{ end }}
 <!-- /upcoming-event -->
+
+<!-- Carousel -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "carousel.html" . }}
+{{ end }}
+<!-- /Carousel -->
+
+<br><br>
 
 <!-- cta_cfp in partial -->
 {{ if $data.homepage.cta_cfp.enable }}
@@ -97,17 +104,20 @@
 {{ end }}
 <!-- /speaker -->
 
+
+<!-- blog -->
+{{ if $data.homepage.event_info.enable }}
+{{ partial "blog.html" . }}
+{{ end }}
+<!-- /blog -->
+
+
 <!-- sponsor -->
 {{ if $data.homepage.sponsor.enable }}
 {{ partial "sponsor.html" . }}
 {{ end }}
 <!-- /sponsor -->
 
-<!-- blog -->
-{{ if $data.homepage.blog.enable }}
-{{ partial "blog.html" . }}
-{{ end }}
-<!-- /blog -->
 
 
 {{ end }}
