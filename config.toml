@@ -6,13 +6,10 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 RemovePathAccents = true
 
-googleAnalytics = "G-GRVWN5Y48L"
-
 publishDir = "public/"
 
 theme = "clowder"
 # post pagination
-paginate = "10"
 
 [taxonomies]
 tag = "tags"
@@ -29,6 +26,7 @@ home = ["HTML", "RSS", "JSON"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
 
 ############################# Plugins ##############################
 # CSS Plugins
@@ -136,6 +134,7 @@ images = ["/images/Clowder_home.jpg"]
 twitter_user = ""
 email = ""
 author = ""
+google_analytics_4 = "G-GRVWN5Y48L"
 
 # search for blog page
 search = true
