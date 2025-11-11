@@ -5,7 +5,8 @@ description:
 date: 2021-12-01T16:04:52-06:00
 start_date: 2021-11-04T10:00:00Z
 link: 
-projects: Data Lake Management
+projects: 
+ - Various Open Source
 sessions: 
  - d1.md
 type_event: Online

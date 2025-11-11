@@ -8,7 +8,8 @@ date: 2022-01-20T19:59:58-06:00
 start_date: 2021-11-16T16:00:00Z
 link:  
 video: https://youtu.be/ywCHus0mTLg
-projects: Data Lake Management
+projects: 
+ - Various Open Source
 draft: false
 ---
 
