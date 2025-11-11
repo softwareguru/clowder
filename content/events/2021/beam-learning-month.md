@@ -5,7 +5,8 @@ description:
 date: 2021-06-09T17:29:08-06:00
 start_date: 2021-06-09T10:00:00Z
 link: "" 
-projects: Apache Beam
+projects: 
+ - Apache Beam
 sessions:
  - beam-dataflow-templates
  - beam-windows-from-open-to-close

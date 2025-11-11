@@ -1,17 +1,17 @@
 ---
 id: 20231212
-title: "OSA CON: The Open Source Analytics Conference"
+title: "The Open Source Analytics Conference 2023"
 description: 
-date: 2023-11-22T14:20:18-06:00
-start_date: 2023-12-12T16:00:00Z
+start_date: 2023-12-12
 cta: 
  type: external
  url: https://osacon.io/
  text: "Check it out!"
-projects: Osa Con
+projects: 
+ - Osa Con
 sessions: 
  - sessions/osacon/20231212.md
-type_event: Online
+location: Online
 status: previous
 draft: false
 ---

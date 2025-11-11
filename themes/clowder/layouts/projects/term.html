@@ -10,7 +10,7 @@
     <div class="schedule-block" style="margin-top: 40px;">
 
 
-  <h1 class="project-top-title"><strong>PROJECT</strong>&nbsp;<img src="/images/icons/Project.png" width="70"></h1>
+  <h1 class="project-top-title">Project <span><img src="/images/icons/Project.png" width="70"></span></h1>
   
       <div class="row">
         <div class="col col-lg-3">
@@ -104,7 +104,7 @@
       <div class="col-md-5">
         <a href="/upcoming-events/">
         <h2 class="upcoming-event-title-projects"> 
-          <img src="/images/icons/Upcoming-events.png"  width="90">UPCOMING EVENTS
+          <img src="/images/icons/Upcoming-events.png"  width="90">Upcoming Events
         </h2>
         </a>
       </div>
@@ -115,7 +115,6 @@
         {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "asc" }}
         {{ $start_date := .Params.start_date | time }}
         {{ if ge $start_date now }}
-
  
         <div class="project-item"><a href="{{ .RelPermalink }}">
         
@@ -145,42 +144,22 @@
       <div class="col-md-5">
         <a href="/previous-events/">
         <h2 class="upcoming-event-title-projects"> 
-          <img src="/images/icons/Event.png" alt="" width="90">PREVIOUS EVENTS
+          <img src="/images/icons/Event.png" alt="" width="90">Previous Events
         </h2>
         </a>
       </div>
       <div class="col col-lg-6 colores">
         {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "desc"}}
-        {{ $start_date := .Params.start_date | time }}
-        {{ if lt $start_date now }}
-
-        <div class="project-item"><a href="{{ .RelPermalink }}">
-          <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>
-          
-
-          <div class="row">
-            
-            <div class="col col-lg-10">
-   
-          <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
-          </p>
-     
-            </div>
-            <div class="col col-lg-2">
-              <!--<center>
-                <div class="recording">
-                  <a href="https://youtu.be/194LCFWaEyE" target="_blank"><i  class="fa fa-2x fa-youtube"></i></a>
-                </div>
-                
-              
-          </center>-->
-            </div>
+          {{ $start_date := .Params.start_date | time }}
+          {{ if lt $start_date now }}
+          <div class="project-item"><a href="{{ .RelPermalink }}">
+            <h3 style="color: black;">{{.Title}}</h3>          
+            <p style="color:black;">
+              {{ $start_date.Format "2 January 2006" }}. 
+              {{ with .Params.location }}{{ . }}.{{end}}
+            </p>
           </div>
-                    <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
-              <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-      </div></a>
-       </div>
-        {{ end }}
+          {{ end }}
         {{ end }}
       </div>
     </div>

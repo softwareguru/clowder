@@ -16,25 +16,20 @@
         </a>
       </div>
       <div class="col col-lg-7 colores">
-        {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "upcoming") ".Params.start_date" | first 3 }}
+        {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" | last 10 }}
         {{ $start_date := .Params.start_date | time }}
+        {{ if gt $start_date now }}
 
         <div class="project-item"><a href="{{ .RelPermalink }}">
-            <h3 style="color: black;"><strong>{{ $start_date.Format "2 January" }}</strong></h3>
+            <h3 style="color: black;"><strong>{{ .Title }}</strong></h3>
 
-            <div class="row">
-              <div class="col col-lg-10">
-                <h5 style="color:black;"><strong>Project: {{ .Params.projects }}</strong></h5>
-                <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title | markdownify }}
-                </p>
-              </div>
-            </div>
-            <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
-              <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-            </div>
-          </a>
+            <p style="color:black;">
+              {{ $start_date.Format "2 January 2006" }}. 
+              {{ with .Params.location }}{{ . }}.{{end}}
+            </p>
         </div>
 
+        {{ end }}
         {{ end }}
 
       </div>

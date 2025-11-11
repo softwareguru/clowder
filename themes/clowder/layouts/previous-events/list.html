@@ -6,18 +6,15 @@
     <table data-toggle="table" data-search="true" data-search-align="left" style="border-collapse: separate; border-radius: 10px; padding: 10px;" >
         <thead>
           <tr>
-            <th data-field="title">Talk</th>
-            <th data-field="project">Project</th>
-            <!--<th data-field="event">Event</th>-->
-            <th data-field="speaker">Speaker(s)</th>
-            <th data-field="recording">Recording</th>
-            <!--<th data-field="slides">Slides</th>-->
-            <th data-field="date">Date</th>
+            <th data-field="title">Event</th>
+            <th data-field="projects">Project(s)</th>
+            <th data-field="date">Date (start)</th>
+            <th data-field="location">Location</th>
           </tr>
         </thead>
         <tbody> 
         
-          {{ range sort (where .Site.RegularPages "Section" "sessions") ".Params.start_date" "desc"}}
+          {{ range sort (where .Site.RegularPages "Section" "events") ".Params.start_date" "desc"}}
           {{ $start_date := .Params.start_date | time }}
           {{ if le $start_date now }}
 
@@ -33,9 +30,7 @@
 
         <td>
           {{ range (.GetTerms "projects") }}
-          <a class="session-title" href="{{ .RelPermalink }}">
-            {{ .Params.title }}
-          </a>
+
           {{ end }}
         </td>
 
