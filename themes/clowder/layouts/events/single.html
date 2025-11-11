@@ -23,8 +23,7 @@
 
           <h3> <strong>{{ $start_date.Format "2 Jan" }}
             </strong></h3>
-          <p>{{ $start_date.Format "3:04pm" }} UTC
-           </p>
+          {{with .Params.location }}<p>{{ . }}</p>{{ end }}
         </div>
 <br>
         <p class="text-center">
