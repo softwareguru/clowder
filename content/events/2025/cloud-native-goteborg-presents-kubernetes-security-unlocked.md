@@ -7,7 +7,7 @@ cta:
   url: https://community.cncf.io/events/details/cncf-cloud-native-goteborg-presents-kubernetes-security-unlocked-protect-and-hack-your-workloads/
   text: RSVP
 projects: 
- - Various Open Source
+ - CNCF
 
 location: Göteborg, Sweden
 

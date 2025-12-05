@@ -1,13 +1,13 @@
 ---
 title: "Open Source Summit Japan 2025"
 description: 
-start_date: 2025-12-8
+start_date: 2025-12-08
 cta: 
   type: external
   url: https://events.linuxfoundation.org/open-source-summit-japan/
   text: Website
 projects: 
- - Various Open Source
+ - CNCF
 location: Tokyo, Japan
 
 ---
