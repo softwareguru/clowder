@@ -1,9 +1,9 @@
 ---
 title: "OSA CON 2025"
-date: 2025-12-06T10:00:00
+date: 2025-12-09T10:00:00
 # post thumb
-images: ["images/blog/2025/.png"]
-draft: true
+images: ["images/blog/2025/osacon-2025.png"]
+draft: false
 ---
 
 The screen lights came on worldwide on November 4–5 as the open-source analytics community from every time zone gathered virtually in one place: OSA CON 2025. 
