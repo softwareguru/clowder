@@ -1,5 +1,5 @@
 ---
-title: "Foss Backstage"
+title: "FOSS Backstage"
 date: 2025-12-10T02:12:11-06:00
 start_date: 2026-03-16
 cta: 
