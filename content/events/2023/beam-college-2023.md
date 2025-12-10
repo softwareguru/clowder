@@ -8,7 +8,8 @@ cta:
  type: external
  url: https://beamcollege.dev/
  text: "Check it out!"
-projects: Apache Beam
+projects: 
+ - Apache Beam
 sessions: 
  - sessions/beam/beam-college-2023
 type_event: Online

@@ -8,7 +8,8 @@ cta:
   type: external
   url: https://www.droidcon.com/events/droidcon-berlin-2024/
   text: Register
-projects: Open Source Events
+projects: 
+ - Various Open Source
 sessions: 
  - sessions/clowder/clowder-20240703
 type_event: Onsite

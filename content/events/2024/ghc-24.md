@@ -8,7 +8,8 @@ cta:
   type: external
   url: https://ghc.anitab.org/
   text: Register
-projects: Open Source Events
+projects: 
+ - Various Open Source
 sessions: 
  - sessions/clowder/clowder-20241011
 type_event: Onsite

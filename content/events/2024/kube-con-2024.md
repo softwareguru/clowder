@@ -8,7 +8,8 @@ cta:
   type: external
   url: https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america-2024/
   text: Register
-projects: Open Source Events
+projects: 
+ - CNCF
 sessions: 
  - sessions/clowder/clowder-20241112
 type_event: Onsite

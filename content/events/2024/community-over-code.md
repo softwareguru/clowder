@@ -9,7 +9,7 @@ cta:
  url: https://eu.communityovercode.org/
  text: "Check it out!"
 projects: 
-
+ - Various Open Source
 sessions: 
  - sessions/community-over-code/20240603.md
 type_event: In person

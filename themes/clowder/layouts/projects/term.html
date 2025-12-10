@@ -98,9 +98,6 @@
  <br>
     
       <div class="row">
-      <div class="col">
-        
-      </div>
       <div class="col-md-5">
         <a href="/upcoming-events/">
         <h2 class="upcoming-event-title-projects"> 
@@ -113,23 +110,16 @@
       <div class="col col-lg-6 colores">
      
         {{ range sort (where .Data.Pages "Section" "events") ".Params.start_date" "asc" }}
-        {{ $start_date := .Params.start_date | time }}
-        {{ if ge $start_date now }}
- 
-        <div class="project-item"><a href="{{ .RelPermalink }}">
-        
-          <h3 style="color: black;"><strong>
-            {{ $start_date.Format "2 January at 3:04pm" }} (<em>{{ .Params.Type_event }}</em>)
-          </strong></h3>
-          
-          <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}</p>
-          <div class="collapse card-abstract" id="abs-{{.Params.id}}" style="color: black;">
-              <div><a href="{{ .RelPermalink }}" style="color: black;">See more...</a></div>
-      </div></a>
-       </div>
- 
-      
-       {{ end }}
+          {{ $start_date := .Params.start_date | time }}
+          {{ if ge $start_date now }}
+          <div class="project-item"><a href="{{ .RelPermalink }}">
+            <h3 style="color: black;">{{.Title}}</h3>          
+            <p style="color:black;">
+              {{ $start_date.Format "2 January 2006" }}. 
+              {{ with .Params.location }}{{ . }}.{{end}}
+            </p>
+          </div>      
+         {{ end }}
        {{ end }}
        
  
@@ -139,8 +129,6 @@
     <br><br>
 
     <div class="row">
-      <div class="col">
-      </div>
       <div class="col-md-5">
         <a href="/previous-events/">
         <h2 class="upcoming-event-title-projects"> 

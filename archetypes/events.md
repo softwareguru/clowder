@@ -1,20 +1,14 @@
 ---
-id: {{ .Name }}
-title: ""
-description: 
+title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-start_date: 2022-03-16T17:30:00Z
+start_date: 2026-01-01
 cta: 
-  type: typeform
-  formid: 
-  text: Register
+  type: external
+  url: 
+  text: Website
+
+location: 
 projects: 
-sessions: 
- - 
-type_event: Online
-status: upcoming
-draft: false
+
 ---
-
-
 
