@@ -10,7 +10,7 @@ cta:
 location: Paris, France
 projects: 
  - Various Open Source
-
+status: previous
 ---
 
 The JSON Schema Conference brings together adopters, implementers, leaders and innovators of the JSON Schema Ecosystem to further the education, adoption and evolution of the JSON Schema specification.

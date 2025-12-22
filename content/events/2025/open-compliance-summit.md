@@ -10,6 +10,7 @@ cta:
 location: Tokyo, Japan
 projects: 
  - CNCF
+status: previous
 ---
 
 The Open Compliance Summit is an event for Linux Foundation members and select invitees to discuss open source license, security and export control compliance. This is the world’s foremost venue to discuss, learn about and network with experienced peers in the domain of open source process management.
