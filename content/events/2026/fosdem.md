@@ -10,7 +10,7 @@ cta:
 location: Brussels, Belgium
 projects: 
  - Various Open Source
-
+status: previous
 ---
 
 FOSDEM is a free event for software developers to meet, share ideas and collaborate. Every year, thousands of developers of free and open source software from all over the world gather at the event in Brussels. You don't need to register. Just turn up and join in!

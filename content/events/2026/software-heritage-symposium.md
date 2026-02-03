@@ -10,6 +10,7 @@ cta:
 location: Paris, France
 projects: 
  - Various Open Source
+status: previous
 draft: false
 ---
 
