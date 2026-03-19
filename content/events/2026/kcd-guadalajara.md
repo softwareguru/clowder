@@ -1,7 +1,7 @@
 ---
 title: "KCD Guadalajara 2026"
 date: 2025-12-10T02:02:18-06:00
-start_date: 2026-02-28
+start_date: 2026-04-18
 cta: 
   type: external
   url: https://sessionize.com/kcd-guadalajara-2026/

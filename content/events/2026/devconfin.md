@@ -10,7 +10,7 @@ cta:
 location: Pune, India
 projects: 
  - Various Open Source
-
+status: previous
 ---
 
 DevConf.IN is the annual developer's conference organized by Red Hat. The conference provides a platform to the FOSS community participants and enthusiasts to come together and engage in knowledge sharing activities through technical talks, workshops, panel discussions, hackathons and much more.

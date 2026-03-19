@@ -10,7 +10,7 @@ cta:
 location: Los Angeles, United States
 projects: 
  - CNCF
-
+status: previous
 ---
 
 The Open Source Forum is an annual event that brings together business and technical leaders from the film and media industries to discuss open source challenges, explore emerging technologies, and collaborate on projects like OpenUSD, OpenColorIO, and OpenCue through keynotes, panels, and technical talks.

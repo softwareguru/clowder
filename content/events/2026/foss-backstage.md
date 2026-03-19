@@ -10,7 +10,7 @@ cta:
 location: Berlin, Germany
 projects: 
  - Various Open Source
-
+status: previous
 ---
 
 What happens behind the scenes of Open Source projects? We want to encourage more discourse about the non-coding aspects of successful open source projects.
