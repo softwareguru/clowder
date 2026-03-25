@@ -10,6 +10,7 @@ cta:
 location: Amsterdam, Netherlands
 projects: 
  - CNCF
+status: previous
 ---
 
 Be a part of the conversation as CNCF Graduated, Incubating, and Sandbox Projects unite for four days of collaboration, learning, and innovation to drive the future of cloud native computing.
