@@ -10,7 +10,7 @@ cta:
 location: Guadalajara, Mexico
 projects: 
  - CNCF
-
+status: previous
 ---
 
 Kubernetes Community Day Guadalajara, an event supported by the CNCF that gathers adopters from open source and cloud native communities for education, collaboration, and networking. This will be the third KCD in the country of Mexico.

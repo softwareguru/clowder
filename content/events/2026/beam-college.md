@@ -10,6 +10,7 @@ cta:
 location: Online
 projects: 
  - apache-beam
+status: previous
 ---
 
 Beam College is an online, free educational program that provides hands-on training to solve data processing use cases using Apache Beam®. The program consists of live online training sessions structured by expertise level, which are then made available on-demand for future reference.
