@@ -15,9 +15,9 @@
     </thead>
     <tbody>
 
-      {{ range sort (where $.Site.RegularPages "Section" "sessions") ".Params.start_date" "asc"}}
-      {{ $start_date := .Params.start_date | time }}
-      {{ if ge $start_date now }}
+        {{ range sort (where $.Site.RegularPages "Section" "events") ".Params.start_date" | last 10 }}
+        {{ $start_date := .Params.start_date | time }}
+        {{ if gt $start_date now }}
 
       <tr>
         <td>
