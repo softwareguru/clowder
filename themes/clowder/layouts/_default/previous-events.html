@@ -33,7 +33,7 @@
 
         <td>
           {{ range (.GetTerms "projects") }}
-
+          <div><a class="session-title" href="{{ .RelPermalink }}">{{ .Params.title }}</a></div>
           {{ end }}
         </td>
 
@@ -46,12 +46,7 @@
           {{ end }}
         </td>-->
 
-        <td>
-        <a>
-          {{ with .Params.speakers }}{{ delimit . ", " " & " }}
-          {{ end }}
-        </a>
-        </td>
+        <td>{{ $start_date.Format "January 2, 2006" }}</td>
        
         <td class="text-center">
           {{ with .Params.video }}
@@ -66,7 +61,7 @@
           </a>
           {{ end }}</td>-->
 
-        <td>{{ $start_date.Format "January 2, 2006" }}</td>
+        
     </tr>
     {{ end }}
     {{ end }}
