@@ -8,8 +8,7 @@ declare var process : {
     }
 }
 
-// An asynchronous function to call
-// the Netlify build hook to rebuild your site
+// An asynchronous function to call the Netlify build hook to rebuild your site
 const rebuildSite = async (triggerTitle: string) => {
     // Construct the URL for the Netlify rebuild hook
     const url = new URL(process.env.NETLIFY_REBUILD_HOOK);
@@ -23,13 +22,12 @@ const rebuildSite = async (triggerTitle: string) => {
     });
 };
 
-// Always update your footer every year! :)
 export default async (request: Request) => {
     await rebuildSite('Refreshing website');
 };
 
 // Netlify scheduled function cron syntax
-// Run every year on the 1st of January at 00:00
+// Run at 1 am of day 1 and 4 (Monday and Thursday) of the week.
 export const config: Config = {
     schedule: '0 1 * * 1,4'
 };
