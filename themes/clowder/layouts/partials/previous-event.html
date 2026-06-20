@@ -11,21 +11,21 @@
       </a>
     </div>
     <div class="col col-lg-7 colores">
-      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous") ".Params.start_date" "desc" | first 3 }}
+      {{ range sort (where (where $.Site.RegularPages "Section" "events") ".Params.status" "previous") ".Params.start_date" "desc" | first 7 }}
         {{ $start_date := .Params.start_date | time }}
       
 
       <div class="project-item"><a href="{{ .RelPermalink }}">
-          <h3 style="color: black;"><strong>{{ $start_date.Format "2 January 2006" }}</strong></h3>
+          <h3 style="color: black;"><strong>{{.Title}}</strong></h3>
 
 
           <div class="row">
 
             <div class="col col-lg-10">
 
-              <h5 style="color:black;"><strong>Project: {{ .Params.projects }}</strong></h5>
+              <h5 style="color:black;"><strong>Project: {{ range .GetTerms "projects" }}{{.Title}}{{end}}</strong></h5>
 
-              <p class="speakers-list" style="color:black;"> <strong>Talk about:</strong> {{ .Title }}
+              <p class="speakers-list" style="color:black;"> {{ $start_date.Format "2 January 2006" }}
               </p>
 
 
